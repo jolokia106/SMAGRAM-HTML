@@ -1,0 +1,17 @@
+{
+    "data": [
+      {
+        "加盟店コード": "232",
+        "加盟店名": "A店",
+        "都道府県": "愛知県",
+        "代表者名": "個人テスト",
+        "事業種別": "SG",
+        "ステータス": "見込み",
+        "割振認定店ランク": "A",
+        "b1":  "<a class='btn btn-primary' href='/0041'><router-link to='/0041'>基本</router-link></a>",
+        "b2":  "<button type='submit' class='btn btn-primary'>店舗</button>",
+        "b3":  "<button type='submit' class='btn btn-primary'>実績</button>"
+      }
+    ]
+  }
+  

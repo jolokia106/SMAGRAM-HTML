@@ -43,6 +43,36 @@
               <li class="mb-1">
                 <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
                   data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                  加盟店管理
+                </button>
+                <div class="collapse" id="home-collapse" style="">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <router-link to="/0040">加盟店一覧</router-link>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <router-link to="/">加盟店実績管理</router-link>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <router-link to="/">称号／ランク管理</router-link>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <router-link to="/0043">承認依頼一覧</router-link>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                  data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
                   顧客管理
                 </button>
                 <div class="collapse" id="home-collapse" style="">

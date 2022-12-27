@@ -7,7 +7,8 @@
       "担当BP": "愛知本店",
       "電話番号": "090-1234-5678",
       "送客元": "コープぎふ",
-      "b1":  "<button type='submit' class='btn btn-primary'>詳細</button>"
+      "b1":  "<a class='btn btn-success' href='/0021'><router-link to='/0021'>詳細</router-link></a>"
+
     }
   ]
 }

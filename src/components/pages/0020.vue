@@ -47,7 +47,7 @@ const columns = [
             <button type="submit" class="btn btn-primary ">検索</button>
         </div>
         <div class="col-auto">
-            <button type="submit" class="btn btn-success ">顧客登録</button>
+            <a href='/0021' role="button"><router-link to='/0021' class='btn btn-success'>登録</router-link></a>
         </div>
     </div>
 

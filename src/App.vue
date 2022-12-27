@@ -49,14 +49,7 @@
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                     <li class="nav-item">
                       <a class="nav-link" href="#">
-                        <span data-feather="users"></span>
                         <router-link to="/0020">顧客一覧</router-link>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">
-                        <span data-feather="users"></span>
-                        <router-link to="/0020">顧客詳細</router-link>
                       </a>
                     </li>
                   </ul>

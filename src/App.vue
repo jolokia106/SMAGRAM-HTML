@@ -34,12 +34,6 @@
                   ユーザ管理
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="shopping-cart"></span>
-                  加盟店管理
-                </a>
-              </li>
               <li class="mb-1">
                 <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
                   data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
@@ -293,4 +287,5 @@ body {
 .btn-toggle-nav a:focus {
   background-color: #d2f4ea;
 }
+
 </style>

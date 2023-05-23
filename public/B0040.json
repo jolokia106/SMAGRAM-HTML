@@ -9,7 +9,7 @@
         "ステータス": "見込み",
         "割振認定店ランク": "A",
         "b1":  "<a class='btn btn-primary' href='/0041'><router-link to='/0041'>基本</router-link></a>",
-        "b2":  "<button type='submit' class='btn btn-primary'>店舗</button>",
+        "b2":  "<a class='btn btn-primary' href='/0042'><router-link to='/0042'>店舗</router-link></a>",
         "b3":  "<button type='submit' class='btn btn-primary'>実績</button>"
       }
     ]

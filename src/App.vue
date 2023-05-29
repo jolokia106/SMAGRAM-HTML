@@ -96,6 +96,9 @@
                       <a class="nav-link" href="#">
                         <router-link to="/0060">備品資材購入(BP専用画面)</router-link>
                       </a>
+                      <a class="nav-link" href="#">
+                        <router-link to="/0061">備品資材一覧</router-link>
+                      </a>
                     </li>
                   </ul>
                 </div>

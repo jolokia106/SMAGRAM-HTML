@@ -1,5 +1,4 @@
 <template>
-
     <div class="content-title">
         <h6>備品資材詳細</h6>
     </div>

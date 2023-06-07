@@ -1,11 +1,11 @@
 <template>
     <div class="content-title">
-        <h6>備品資材詳細</h6>
+        <h5>備品資材詳細</h5>
     </div>
 
     <div class="content-body">
         <div class="content-body-title">
-            <h6>備品資材情報</h6>
+            <h5>備品資材情報</h5>
         </div>
         <div class="container">
             <form action="/0061" method="GET">

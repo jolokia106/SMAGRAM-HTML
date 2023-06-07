@@ -7,7 +7,7 @@ import footer_view from '@/components/components/layouts/footer.vue';
 <template>
 
     <header_view />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <main>
         <!-- <TheNavbar /> -->
         <div class="container-fluid">

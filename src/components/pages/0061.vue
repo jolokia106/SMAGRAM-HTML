@@ -1,7 +1,7 @@
 <template>
 
     <div class="content-title">
-        <h6>備品資材一覧</h6>
+        <h5>備品資材一覧</h5>
     </div>
 
     <div class="content-header">

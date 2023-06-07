@@ -26,6 +26,15 @@ main {
     .sp-hidden{
         display: none;
     }
+    .form-control {
+        height: 47px !important;
+    }
+    .form-select {
+        height: 47px !important;
+    }
+    .btn {
+        height: 47px !important;
+    }
 }
 
 /*------------------------------------------------------------
@@ -244,12 +253,12 @@ footer .footer-content p {
     width: 100%;
     margin: 40px 0 30px 0;
 }
-.content-title h6 {
+.content-title h5 {
     font-weight: 900 !important;
 }
 
 @media (max-width: 768px) {
-    .content-title h6 {
+    .content-title h5 {
         font-weight: 900 !important;
         font-size: 16px;
     }
@@ -439,6 +448,14 @@ input[type=checkbox]:checked+.checkbox::after {
     .sort-area {
         margin-right: 40px;
     }
+    .content-header .new-button{
+        height: 47px !important;
+        padding-top: 7px;
+    }
+    .content-header .sort-area img{
+        height: 47px;
+        width: 47px;
+    }
 }
 /*------------------------------------------------------------
 	一覧
@@ -568,6 +585,11 @@ input[type=checkbox]:checked+.checkbox::after {
         padding-left: 0;
         margin-left: 0 !important;
     }
+    .content-footer .pager li {
+        height: 47px !important;
+        width: 47px !important;
+        padding-top: 7px;
+    }
 }
 
 /*------------------------------------------------------------
@@ -620,4 +642,12 @@ input[type=checkbox]:checked+.checkbox::after {
     .content-body .offset {
         width: 100px;
     }
+    .content-body .add-buttons img {
+        height: 40px;
+        width: 40px;
+    }
+    .content-body .column {
+        font-size: 17px;
+    }
+    
 }

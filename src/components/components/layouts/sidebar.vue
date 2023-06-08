@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid col-lg-2 col-md-3 sidebar-area">
+    <div class="container-fluid col-lg-2 col-md-3 sidebar-area menu-active">
         
         <div class="sidebar-items home">
             <div class="sidebar-title">
@@ -77,19 +77,19 @@
             <div class="sidebar-title">備品資材管理</div>
             <ul class="sidebar-content">
                 <li>
-                    <a href="/0060">
+                    <a href="/materials/buy">
                         <p>備品資材購入</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="/0061">
+                    <a href="/materials/list">
                         <p>備品資材一覧</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="/suppliers/list">
                         <p>仕入先一覧</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>

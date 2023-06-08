@@ -27,8 +27,8 @@
                 <p>チャット</p>
             </a>
         </div>
-        <div class="footer-content">
-            <a href="/">
+        <div class="footer-content" id="openMenu">
+            <a href="javascript:void(0)">
                 <img src="/src/assets/image/menu1.svg" alt="">
                 <p>メニュー</p>
             </a>

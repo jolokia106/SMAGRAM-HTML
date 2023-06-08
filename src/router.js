@@ -4,9 +4,12 @@ import C0021 from './components/pages/0021.vue'
 import B0040 from './components/pages/0040.vue'
 import B0041 from './components/pages/0041.vue'
 import B0042 from './components/pages/0042.vue'
-import E0060 from './components/pages/0060-xd.vue'
-import E0061 from './components/pages/0061.vue'
-import E0062 from './components/pages/0062.vue'
+import materialsBuy from './components/pages/materials/buy.vue'
+import materialsList from './components/pages/materials/list.vue'
+import materialsForm from './components/pages/materials/form.vue'
+import suppliersList from './components/pages/suppliers/list.vue'
+import suppliersForm from './components/pages/suppliers/form.vue'
+
 
 const routes = [
   { path: '/0020', name: '0020', component: C0020 },
@@ -14,9 +17,11 @@ const routes = [
   { path: '/0040', name: '0040', component: B0040 },
   { path: '/0041', name: '0041', component: B0041 },
   { path: '/0042', name: '0042', component: B0042 },
-  { path: '/0060', name: '0060', component: E0060 },
-  { path: '/0061', name: '0061', component: E0061 },
-  { path: '/0062', name: '0062', component: E0062 },
+  { path: '/materials/buy', name: 'materials_buy', component: materialsBuy },
+  { path: '/materials/list', name: 'materials_list', component: materialsList },
+  { path: '/materials/form', name: 'materials_form', component: materialsForm },
+  { path: '/suppliers/list', name: 'suppliers_list', component: suppliersList },
+  { path: '/suppliers/form', name: 'suppliers_form', component: suppliersForm },
 ]
 
 const router = createRouter({

@@ -1,0 +1,8 @@
+.content-body .account .account-column {
+    width: 150px;
+}
+@media (max-width: 768px) {
+    .content-body .account .account-column{
+        width: 150px;
+    }
+}

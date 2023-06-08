@@ -78,6 +78,5 @@ const columns = [
 </template>
 
 <style>
-@import 'bootstrap';
 @import 'datatables.net-bs5';
 </style>

@@ -8,7 +8,7 @@
             <h5>備品資材情報</h5>
         </div>
         <div class="container">
-            <form action="/0061" method="GET">
+            <form action="/materials/list" method="GET">
                 <div class="row">
                     <div class="row mb-3 col-md-6">
                         <div class="column">購入BP店名</div>

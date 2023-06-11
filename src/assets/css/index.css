@@ -314,9 +314,21 @@ footer .footer-content p {
     padding-left: 37px !important;
     font-size: 23px !important;
 }
+.buttons {
+    text-align: center;
+    width: 100%;
+}
+.buttons input{
+    width: 100px;
+    margin-right: 20px;
+}
 @media (max-width: 768px) {
     .sp-wide {
         width: 100%;
+    }
+    .buttons input{
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
 /*------------------------------------------------------------

@@ -9,6 +9,8 @@ import materialsList from './components/pages/materials/list.vue'
 import materialsForm from './components/pages/materials/form.vue'
 import suppliersList from './components/pages/suppliers/list.vue'
 import suppliersForm from './components/pages/suppliers/form.vue'
+import newsList from './components/pages/cms/news/list.vue'
+import newsForm from './components/pages/cms/news/form.vue'
 
 
 const routes = [
@@ -22,6 +24,8 @@ const routes = [
   { path: '/materials/form', name: 'materials_form', component: materialsForm },
   { path: '/suppliers/list', name: 'suppliers_list', component: suppliersList },
   { path: '/suppliers/form', name: 'suppliers_form', component: suppliersForm },
+  { path: '/news/list', name: 'news_list', component: newsList },
+  { path: '/news/form', name: 'news_form', component: newsForm },
 ]
 
 const router = createRouter({

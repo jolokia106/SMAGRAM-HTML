@@ -149,42 +149,42 @@
             <div class="sidebar-title">CMS</div>
             <ul class="sidebar-content">
                 <li>
-                    <a href="">
-                        <p>本部からのお知らせ</p>
+                    <a href="/news/list">
+                        <p>重要なお知らせ</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="/news/list">
                         <p>キャンペーン</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="/news/list">
                         <p>広報・PR</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="/news/list">
                         <p>施工事例</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="/news/list">
                         <p>Q&A</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="/news/list">
                         <p>都道府県テキスト</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="/news/list">
                         <p>独自エリアエディタ</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>

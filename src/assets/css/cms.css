@@ -6,6 +6,27 @@
     min-height: 200px;
 }
 
+.image-area {
+    width: 250px;
+    height: 140px;
+    padding: 0;
+    margin-left: calc(var(--bs-gutter-x) * .5);
+}
+.image-area img{
+    width: 120px;
+    height: 120px;
+    margin: 16px;
+}
+.dropzone {
+    padding: 0;
+    text-align: center;
+}
+.dz-preview {
+    margin: 0 auto !important;
+}
+.dz-message {
+    margin: 0 !important;
+}
 
 
 
@@ -14,7 +35,7 @@
 ------------------------------------------------------------*/
 /* スイッチ大枠 */
 .switch-wrap {
-    width: 268px;
+    width: 282px;
 }
 .switch-wrap p{
     width: auto;
@@ -28,7 +49,7 @@
     text-align     : center;              
     font-size      : 24px;                
     position       : relative;            
-    margin         : auto;                
+    /* margin         : auto;                 */
     width          : 70px;               
     background     : #fff;               
     padding: 0;

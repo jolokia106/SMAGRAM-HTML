@@ -376,8 +376,13 @@
 
 <script>
     $(function(){
+        changeAccount();
         // 銀行選択時の処理
         $('#selectAccount').on('change', function(){
+            changeAccount();
+        });
+
+        function changeAccount(){
             if($('#selectAccount').val() == 1){
                 $('.other').show();
                 $('.yutyo').hide();
@@ -385,6 +390,6 @@
                 $('.other').hide();
                 $('.yutyo').show();
             }
-        });
+        }
     });
 </script>

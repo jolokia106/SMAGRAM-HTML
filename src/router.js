@@ -11,6 +11,16 @@ import suppliersList from './components/pages/suppliers/list.vue'
 import suppliersForm from './components/pages/suppliers/form.vue'
 import newsList from './components/pages/cms/news/list.vue'
 import newsForm from './components/pages/cms/news/form.vue'
+import campaignsList from './components/pages/cms/campaigns/list.vue'
+import campaignsForm from './components/pages/cms/campaigns/form.vue'
+import prsList from './components/pages/cms/prs/list.vue'
+import prsForm from './components/pages/cms/prs/form.vue'
+import constructionsList from './components/pages/cms/constructions/list.vue'
+import constructionsForm from './components/pages/cms/constructions/form.vue'
+import pref_textsList from './components/pages/cms/pref_texts/list.vue'
+import pref_textsForm from './components/pages/cms/pref_texts/form.vue'
+import regionsList from './components/pages/cms/regions/list.vue'
+import regionsForm from './components/pages/cms/regions/form.vue'
 
 
 const routes = [
@@ -26,6 +36,16 @@ const routes = [
   { path: '/suppliers/form', name: 'suppliers_form', component: suppliersForm },
   { path: '/news/list', name: 'news_list', component: newsList },
   { path: '/news/form', name: 'news_form', component: newsForm },
+  { path: '/campaigns/list', name: 'campaigns_list', component: campaignsList},
+  { path: '/campaigns/form', name: 'campaigns_form', component: campaignsForm },
+  { path: '/prs/list', name: 'prs_list', component: prsList},
+  { path: '/prs/form', name: 'prs_form', component: prsForm},
+  { path: '/constructions/list', name: 'constructions_list', component: constructionsList},
+  { path: '/constructions/form', name: 'constructions_form', component: constructionsForm},
+  { path: '/pref_texts/list', name: 'pref_texts_list', component: pref_textsList},
+  { path: '/pref_texts/form', name: 'pref_texts_form', component: pref_textsForm},
+  { path: '/regions/list', name: 'regions_list', component: regionsList},
+  { path: '/regions/form', name: 'regions_form', component: regionsForm},
 ]
 
 const router = createRouter({

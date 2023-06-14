@@ -1,9 +1,12 @@
 * {
-    font: normal normal normal 14px/30px Meiryo;
+    font: normal normal normal 16px Meiryo;
 }
 main {
     margin-top: 90px;
     margin-bottom: 90px;
+}
+.orive {
+    color: #998641;
 }
 
 .content-header {
@@ -92,7 +95,7 @@ header .badge {
     color: #FFFFFF;
     background-color: #998641;
     position: relative;
-    top: -80px;
+    top: -75px;
     left: 10px;
 }
 
@@ -324,7 +327,7 @@ footer .footer-content p {
 }
 @media (max-width: 768px) {
     .sp-wide {
-        width: 100%;
+        width: 100% !important;
     }
     .buttons input{
         width: 100%;
@@ -400,14 +403,14 @@ input[type=checkbox]:checked+.checkbox::after {
     margin-bottom: 10px;
 }
 .content-header .search-area .form-control{
-    height: 30px;
+    height: 37px;
 }
 .content-header .search-area .form-control::placeholder{
     color: #DDDDDD;
     font-size: 11px;
 }
 .content-header .search-area .search-button {
-    height: 30px;
+    height: 37px;
     font-size: 13px;
     font-weight: bold;
     border-radius: 3px !important;
@@ -418,14 +421,14 @@ input[type=checkbox]:checked+.checkbox::after {
     border: 1px solid #998641;
     border-radius: 5px;
     background-color: #F8F6F1;
-    height: 35px;
+    height: 37px;
     text-align: center;
     margin-right: 20px;
+    padding-top: 4px;
 }
 .content-header .new-button{
     text-decoration: none;
     color: #998641;
-
 }
 .content-header .new-button span{
     margin-left: 10px;
@@ -444,12 +447,12 @@ input[type=checkbox]:checked+.checkbox::after {
 }
 
 .content-header .sort-area img{
-    height: 24px;
-    width: 24px;
+    height: 37px;
+    width: 37px;
     fill:  #F2F2F2;
 }
 .content-header .sort-area select{
-    height: 24px;
+    height: 37px;
     padding: 0;
     background-color: #F2F2F2;
     text-align: center;
@@ -458,6 +461,33 @@ input[type=checkbox]:checked+.checkbox::after {
 }
 .sort-area .form-select {
     background-image: none !important;
+}
+
+.link-orive {
+    width: 280px;
+    border: 1px solid #998641;
+    border-radius: 5px;
+    background-color: #F8F6F1;
+    height: 47px;
+    margin-right: 20px;
+    padding-top: 7px;
+    text-decoration: none;
+    color: #998641;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.content-header .link-orive span{
+    margin: 0 auto;
+    top: 2px;
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+}
+.content-header .link-orive img{
+    padding: 0 40px 0 20px;
+    position: absolute;
+    left: 0;
 }
 
 @media (max-width: 768px) {
@@ -494,8 +524,41 @@ input[type=checkbox]:checked+.checkbox::after {
         height: 47px;
         width: 47px;
     }
+    .content-header .link-orive{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .content-header .link-orive span{
+        font-size: 22px !important;
+        top: 0;
+    }
+    .content-header .link-orive img{
+        position: absolute;
+        left: 0;
+    }
 
 }
+
+@media (min-width: 769px) {
+    .annotation {
+        float: right;
+    }
+    .claim-wrap {
+        display: flex;
+    }
+    .claim-wrap p:nth-child(1) {
+        padding-top: 20px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .claim-wrap p {
+        font-size: 20px;
+        padding-top: 20px !important;
+    }
+}
+
 /* 検索モーダル */
 .modal-body .modal-title {
     font-size: 20px;
@@ -510,6 +573,19 @@ input[type=checkbox]:checked+.checkbox::after {
     font-size: 16px;
     color: #998641 !important;
 }
+/* 詳細モーダル */
+.buy-item {
+    margin: 30px auto;
+    border-top: #CCCCCC solid 1px;
+    border-bottom: #CCCCCC solid 1px;
+    padding: 20px 0;
+}
+.buy-item table th, 
+.buy-item table td {
+    text-align: left;
+}
+
+
 /*------------------------------------------------------------
 	一覧
 ------------------------------------------------------------*/

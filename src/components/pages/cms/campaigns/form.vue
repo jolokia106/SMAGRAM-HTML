@@ -13,7 +13,7 @@
 </script>
 <template>
     <div class="content-title">
-        <h5>重要なお知らせ詳細</h5>
+        <h5>キャンペーン詳細</h5>
     </div>
 
     <div class="content-body">
@@ -21,12 +21,17 @@
             <h5>記事情報</h5>
         </div>
         <div class="container">
-            <form action="/news/list" method="GET">
+            <form action="/campaigns/list" method="GET">
 
                 <titleView />
                 <contentView />
                 <imageView />
-
+                <div class="row mb-3">
+                    <div class="column">特記事項</div>
+                    <div class="col-md-8">
+                        <textarea class="form-control"></textarea>
+                    </div>
+                </div>
                 
 
                 <div class="row mb-3">
@@ -34,8 +39,35 @@
                     <div class="col-md-8 row">
                         <div class="row mb-3">
                             <isOpenView />
-                            <publishDateView />
+                            <div class="col-md-8 row">
+                                <div class="col-md-6 row publish-date mb-3">
+                                    <p class="col-md-5 px-0">掲載日</p>
+                                    <div class="col-md-7 px-0">
+                                        <input type="date" class="form-control mx-0" id="start">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 row publish-date mb-3">
+                                    <p class="col-md-5 px-0">掲載日</p>
+                                    <div class="col-md-7 px-0">
+                                        <input type="date" class="form-control mx-0" id="start">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 row publish-date mb-3">
+                                    <p class="col-md-5 px-0">対象人数</p>
+                                    <div class="col-md-7 px-0">
+                                        <input type="date" class="form-control mx-0" id="start">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 row publish-date mb-3">
+                                    <p class="col-md-5 px-0">差引係数/日</p>
+                                    <div class="col-md-7 mx-0">
+                                        <p>0000</p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+
 
                         <switchView />
                     </div>
@@ -45,17 +77,17 @@
                         <input type="button" class="btn btn-orive" value="登録" data-bs-toggle="modal" data-bs-target="#confirmModal">
                         <input type="button" class="btn btn-orive" value="削除" data-bs-toggle="modal" data-bs-target="#deleteModal">
                 </div>
-                
+
                 <!-- 確認モーダル -->
                 <confirmView />
                 <!-- 削除モーダル -->
                 <deleteView />
+
             </form>
 
                 
         </div>
     </div>
-
 
 
 

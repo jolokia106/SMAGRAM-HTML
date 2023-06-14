@@ -13,7 +13,7 @@
 </script>
 <template>
     <div class="content-title">
-        <h5>重要なお知らせ詳細</h5>
+        <h5>Q&A詳細</h5>
     </div>
 
     <div class="content-body">
@@ -21,7 +21,7 @@
             <h5>記事情報</h5>
         </div>
         <div class="container">
-            <form action="/news/list" method="GET">
+            <form action="/prs/list" method="GET">
 
                 <titleView />
                 <contentView />

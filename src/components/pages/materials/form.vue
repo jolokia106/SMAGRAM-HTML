@@ -44,63 +44,28 @@
 
 
 
-                <div class="items">
-                    <div class="item">
-
-                            <div class="row mb-3">
-                                <div class="column">商品名１</div>
-                                <div class="col-md-3"><input type="text" class="form-control"></div>
-                            </div>
-                        <div class="row">
-                            <div class="row mb-3 col-md-4 item-div">
-                                <div class="column">購入金額</div>
-                                <div class="number"><input type="text" class="form-control"></div>
-                            </div>
-                            <div class="row mb-3 col-md-4 item-div">
-                                <div class="column">購入数</div>
-                                <div class="number"><input type="text" class="form-control"></div>
-                            </div>
-                            <div class="row mb-3 col-md-4 item-div">
-                                <div class="column">送料</div>
-                                <div class="number"><input type="text" class="form-control"></div>
-                            </div>
-                        </div>
-
-
+                <div class="items" id="items">
+                    <div class="item" id="item_1">
                         <div class="row mb-3">
-                            <div class="column">原価</div>
-                            <div class="number"><input type="text" class="form-control"></div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="column">仕入先</div>
-                            <div class="col-md-3">
-                                <select name="" id="" class="form-select">
-                                    <option value="">仕入先１</option>
-                                    <option value="">仕入先２</option>
-                                    <option value="">仕入先３</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="row mb-3">
-                            <div class="column">商品名２</div>
+                            <div class="column">商品名<span class="item_num">1</span></div>
                             <div class="col-md-3"><input type="text" class="form-control"></div>
                         </div>
                         <div class="row">
-                            <div class="row mb-3 col-md-4">
+                            <div class="row mb-3 col-md-4 item-div">
                                 <div class="column">購入金額</div>
-                                <div class="number"><input type="text" class="form-control"></div>
+                                <div class="number"><input type="text" class="form-control num-input buy-amount"></div>
                             </div>
-                            <div class="row mb-3 col-md-4">
+                            <div class="row mb-3 col-md-4 item-div">
                                 <div class="column">購入数</div>
-                                <div class="number"><input type="text" class="form-control"></div>
+                                <div class="number"><input type="text" class="form-control num-input buy-num"></div>
                             </div>
-                            <div class="row mb-3 col-md-4">
+                            <div class="row mb-3 col-md-4 item-div">
                                 <div class="column">送料</div>
-                                <div class="number"><input type="text" class="form-control"></div>
+                                <div class="number"><input type="text" class="form-control num-input buy-postage"></div>
                             </div>
                         </div>
+
+
                         <div class="row mb-3">
                             <div class="column">原価</div>
                             <div class="number"><input type="text" class="form-control"></div>
@@ -116,17 +81,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="add-buttons">
-                        <img src="/src/assets/image/square_plus_icon.svg">
-                        <img src="/src/assets/image/square_minus_icon.svg">
-                    </div>
-
+                    
                 </div>
-
+                <div class="add-buttons">
+                    <img src="/src/assets/image/square_plus_icon.svg" id="add">
+                    <img src="/src/assets/image/square_minus_icon.svg" id="remove">
+                </div>
 
                 <div class="row mb-3">
                     <div class="column">合計金額</div>
-                    <div class="number"><input type="text" class="form-control"></div>
+                    <div class="number"><input type="text" class="form-control" id="total"></div>
                 </div>
 
 
@@ -171,10 +135,87 @@
         </div>
     </div>
 
+    <!-- 複製用 -->
+    <div class="" id="original" style="display:none;">
+        <div class="row mb-3">
+            <div class="column">商品名<span class="item_num"></span></div>
+            <div class="col-md-3"><input type="text" class="form-control"></div>
+        </div>
+        <div class="row">
+            <div class="row mb-3 col-md-4 item-div">
+                <div class="column">購入金額</div>
+                <div class="number"><input type="text" class="form-control num-input buy-amount"></div>
+            </div>
+            <div class="row mb-3 col-md-4 item-div">
+                <div class="column">購入数</div>
+                <div class="number"><input type="text" class="form-control num-input buy-num"></div>
+            </div>
+            <div class="row mb-3 col-md-4 item-div">
+                <div class="column">送料</div>
+                <div class="number"><input type="text" class="form-control num-input buy-postage"></div>
+            </div>
+        </div>
 
 
-
-
-
-
+        <div class="row mb-3">
+            <div class="column">原価</div>
+            <div class="number"><input type="text" class="form-control"></div>
+        </div>
+        <div class="row mb-3">
+            <div class="column">仕入先</div>
+            <div class="col-md-3">
+                <select name="" id="" class="form-select">
+                    <option value="">仕入先１</option>
+                    <option value="">仕入先２</option>
+                    <option value="">仕入先３</option>
+                </select>
+            </div>
+        </div>
+    </div>
 </template>
+
+<script>
+    $(function(){
+        var items = $('#items');
+        var i = 2;
+        console.log($(".item").length);
+        console.log($(".item").length > 1);
+        if($(".item").length == 1){
+            $('#remove').hide();
+        }
+
+        $('#add').on('click',function(){
+            var item = $('#original').clone(true);
+            item.find('.item_num').text(i);
+            item.show();
+            item.addClass('item');
+            item.attr('id', '');
+            items.append(item);
+            $('#remove').show();
+            i++;
+        });
+        $('#remove').on('click',function(){
+            $($(".item")[$(".item").length-1]).remove(); 
+            if($(".item").length == 1){
+                $('#remove').hide();
+            }
+            i--;
+            changeTotal();
+        });
+
+        $('.num-input').on('change', function(){
+            changeTotal();
+        });
+
+        function changeTotal(){
+            var price = 0;
+            $('.item').each(function(index) {
+                if($(this).find('.buy-amount').val() && $(this).find('.buy-num').val() && $(this).find('.buy-postage').val()){
+                    price += ( Number($(this).find('.buy-amount').val()) * Number($(this).find('.buy-num').val()) ) + Number($(this).find('.buy-postage').val());
+                }
+            });
+            $('#total').val(price);
+        }
+        
+    });
+</script>

@@ -151,40 +151,41 @@
                 <li>
                     <a href="/news/list">
                         <p>重要なお知らせ</p>
+                        <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="/news/list">
+                    <a href="/campaigns/list">
                         <p>キャンペーン</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="/news/list">
+                    <a href="/prs/list">
                         <p>広報・PR</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="/news/list">
+                    <a href="/constructions/list">
                         <p>施工事例</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="/news/list">
+                    <a href="/qas/list">
                         <p>Q&A</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="/news/list">
+                    <a href="/pref_texts/list">
                         <p>都道府県テキスト</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="/news/list">
+                    <a href="/regions/list">
                         <p>独自エリアエディタ</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>

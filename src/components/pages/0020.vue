@@ -1,6 +1,8 @@
-<script setup lang="ts">
+<script lang="ts">
+import Vue from 'vue';
 import DataTable from 'datatables.net-vue3';
 import DataTablesLib from 'datatables.net-bs5';
+
 DataTable.use(DataTablesLib);
 
 const columns = [
@@ -12,6 +14,17 @@ const columns = [
     { data: '送客元' },
     { data: 'b1' },
 ];
+
+// export default {
+//     components: {
+//     },
+//     data() {
+//         this.$emit('parent-event')
+//         alert('ページが読み込まれました！')
+
+//     }
+// };
+
 </script>
 
 <template>

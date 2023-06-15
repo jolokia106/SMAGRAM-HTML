@@ -258,6 +258,7 @@ footer .footer-content p {
 /*------------------------------------------------------------
 	ボタン
 ------------------------------------------------------------*/
+/*
 .btn {
     min-width: 95px;
 }
@@ -273,7 +274,8 @@ footer .footer-content p {
     color: #FFFFFF !important;
     margin-left: 30px;
 }
-.btn-detail {
+*/
+.account {
     background-color: #BBBBBB !important;
     border-color: #BBBBBB !important;
     color: #FFFFFF !important;
@@ -584,6 +586,11 @@ input[type=checkbox]:checked+.checkbox::after {
     font-weight: 800;
     width: 120px
 }
+.content-body .column-2 {
+    color: #998641;
+    font-weight: 800;
+    width: 240px
+}
 .content-body .number {
     width: 100px
 }
@@ -620,4 +627,23 @@ input[type=checkbox]:checked+.checkbox::after {
     .content-body .offset {
         width: 100px;
     }
+}
+
+.login-page, .register-page {
+    -ms-flex-align: center;
+    align-items: center;
+    background: #e9ecef;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.login-logo, .register-logo {
+    font-size: 2.1rem;
+    font-weight: 300;
+    margin-bottom: .9rem;
+    text-align: center;
 }

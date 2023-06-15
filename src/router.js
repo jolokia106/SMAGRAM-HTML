@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import C0010 from './components/pages/0010.vue'
 import C0020 from './components/pages/0020.vue'
 import C0021 from './components/pages/0021.vue'
 import B0040 from './components/pages/0040.vue'
@@ -9,6 +10,7 @@ import E0061 from './components/pages/0061.vue'
 import E0062 from './components/pages/0062.vue'
 
 const routes = [
+  { path: '/', name: '0010', meta: { layout: 'none'}, component: C0010},
   { path: '/0020', name: '0020', component: C0020 },
   { path: '/0021', name: '0021', component: C0021 },
   { path: '/0040', name: '0040', component: B0040 },

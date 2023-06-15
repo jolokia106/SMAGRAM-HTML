@@ -17,10 +17,15 @@ import prsList from './components/pages/cms/prs/list.vue'
 import prsForm from './components/pages/cms/prs/form.vue'
 import constructionsList from './components/pages/cms/constructions/list.vue'
 import constructionsForm from './components/pages/cms/constructions/form.vue'
+import qasList from './components/pages/cms/qas/list.vue'
+import qasForm from './components/pages/cms/qas/form.vue'
 import pref_textsList from './components/pages/cms/pref_texts/list.vue'
 import pref_textsForm from './components/pages/cms/pref_texts/form.vue'
 import regionsList from './components/pages/cms/regions/list.vue'
 import regionsForm from './components/pages/cms/regions/form.vue'
+import prAreasForm from './components/pages/pr_areas/form.vue'
+import chatsList from './components/pages/chats/list.vue'
+import chatsForm from './components/pages/chats/form.vue'
 
 
 const routes = [
@@ -42,10 +47,15 @@ const routes = [
   { path: '/prs/form', name: 'prs_form', component: prsForm},
   { path: '/constructions/list', name: 'constructions_list', component: constructionsList},
   { path: '/constructions/form', name: 'constructions_form', component: constructionsForm},
+  { path: '/qas/list', name: 'qas_list', component: qasList},
+  { path: '/qas/form', name: 'qas_form', component: qasForm},
   { path: '/pref_texts/list', name: 'pref_texts_list', component: pref_textsList},
   { path: '/pref_texts/form', name: 'pref_texts_form', component: pref_textsForm},
   { path: '/regions/list', name: 'regions_list', component: regionsList},
   { path: '/regions/form', name: 'regions_form', component: regionsForm},
+  { path: '/pr_areas/form', name: 'pr_areas_form', component: prAreasForm},
+  { path: '/chats/list', name: 'chats_list', component: chatsList},
+  { path: '/chats/form', name: 'chats_form', component: chatsForm},
 ]
 
 const router = createRouter({

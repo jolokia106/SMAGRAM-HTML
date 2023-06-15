@@ -197,7 +197,7 @@
             <div class="sidebar-title">広告管理</div>
             <ul class="sidebar-content">
                 <li>
-                    <a href="">
+                    <a href="/pr_areas/form">
                         <p>広告エリア作成</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>

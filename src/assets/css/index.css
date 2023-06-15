@@ -389,6 +389,17 @@ input[type=checkbox]:checked+.checkbox::after {
     left: 7px;
 }
 
+.check-settings {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+  .check-settings .form-check-inline {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+    min-width: 166px;
+  }
+
 
 /*------------------------------------------------------------
 	一覧上部
@@ -624,6 +635,18 @@ input[type=checkbox]:checked+.checkbox::after {
 }
 
 
+@media (min-width: 769px) {
+    .grow-3 {
+        flex-grow: 3 !important;
+    }
+    .grow-2 {
+        flex-grow: 2 !important;
+    }
+    .grow-1 {
+        flex-grow: 1 !important;
+    }
+
+}
 @media (max-width: 768px) {
     .list-table {
         display: flex;
@@ -763,6 +786,33 @@ input[type=checkbox]:checked+.checkbox::after {
     fill: #998641;
     margin: 0 30px;
 }
+.categorys .add-button {
+    width: 37px;
+    height: 37px;
+    padding: 0;
+}
+.categorys .category {
+    width: auto;
+}
+.categorys .category img {
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+    padding: 0;
+}
+.categorys .category span {
+    width: auto;
+}
+.category .row {
+    margin-right: 10px !important;
+    margin-left: 0 !important;
+}
+.category p {
+    padding-top: 6px;
+}
+.demand-num {
+    width: 100px !important;
+}
 
 @media (max-width: 768px) {
     .content-body .number {
@@ -779,5 +829,16 @@ input[type=checkbox]:checked+.checkbox::after {
         font-size: 17px;
         width: 100%;
     }
-    
+    .categorys .add-button {
+        margin: 0 auto;
+    }
+}
+
+.target-areas {
+    padding-bottom: 60px;
+    border-bottom: #998641 1px solid;
+}
+
+.pr-areas .check-settings span{
+    cursor: pointer;
 }

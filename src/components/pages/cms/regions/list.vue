@@ -67,20 +67,18 @@
     </div>
 
     <div class="content-body">
-        <div class="list-table">
+        <div class="list-table regions-table">
             <ul class="tr head">
-                <li class="th">記事タイトル</li>
-                <li class="th">掲載サイト</li>
-                <li class="th">掲載日</li>
-                <li class="th">表示状態</li>
-                <li class="th sp-hidden"></li>
+                <li class="th grow-1 text-start">エリア名称</li>
+                <li class="th grow-3 text-start">対象地域</li>
+                <li class="th grow-1">掲載サイト</li>
+                <li class="th sp-hidden grow-1"></li>
             </ul>
             <ul class="tr body">
-                <li class="td">記事タイトル</li>
-                <li class="td">スマイルガーデン</li>
-                <li class="td">2022/2/25</li>
-                <li class="td">予約</li>
-                <li class="td sp-hidden">
+                <li class="td grow-1 text-start">道央</li>
+                <li class="td grow-3 text-start">札幌市中央区/札幌市北区/札幌市南区</li>
+                <li class="td grow-1">スマイルガーデン</li>
+                <li class="td sp-hidden grow-1">
                     <a href="/regions/form" class="btn btn-detail">詳細</a> 
                 </li>
             </ul>
@@ -90,18 +88,16 @@
 
             <!-- データの二週目以降の th に当たる箇所に sp-only のクラスを付与する必要あり -->
             <ul class="tr head sp-only">
-                <li class="th">記事タイトル</li>
+                <li class="th grow-1 text-start">エリア名称</li>
+                <li class="th grow-3 text-start">対象地域</li>
                 <li class="th">掲載サイト</li>
-                <li class="th">掲載日</li>
-                <li class="th">表示状態</li>
                 <li class="th sp-hidden"></li>
             </ul>
             <ul class="tr body">
-                <li class="td">記事タイトル</li>
-                <li class="td">愛知農園</li>
-                <li class="td">2022/1/25</li>
-                <li class="td">予約</li>
-                <li class="td sp-hidden">
+                <li class="td grow-1 text-start">東北</li>
+                <li class="td grow-3 text-start">青森県/秋田県/岩手県/宮城県/山形県/など</li>
+                <li class="td grow-1">愛知農園</li>
+                <li class="td sp-hidden grow-1">
                     <a href="/regions/form" class="btn btn-detail">詳細</a> 
                 </li>
             </ul>
@@ -110,18 +106,16 @@
             </div>
 
             <ul class="tr head sp-only">
-                <li class="th">記事タイトル</li>
+                <li class="th grow-1 text-start">エリア名称</li>
+                <li class="th grow-3 text-start">対象地域</li>
                 <li class="th">掲載サイト</li>
-                <li class="th">掲載日</li>
-                <li class="th">表示状態</li>
                 <li class="th sp-hidden"></li>
             </ul>
             <ul class="tr body">
-                <li class="td">記事タイトル</li>
-                <li class="td"></li>
-                <li class="td">2022/1/25</li>
-                <li class="td">非表示</li>
-                <li class="td sp-hidden">
+                <li class="td grow-1 text-start">東北</li>
+                <li class="td grow-3 text-start">青森県/秋田県/岩手県/宮城県/山形県/など</li>
+                <li class="td grow-1">愛知農園</li>
+                <li class="td sp-hidden grow-1">
                     <a href="/regions/form" class="btn btn-detail">詳細</a> 
                 </li>
             </ul>
@@ -130,18 +124,16 @@
             </div>
 
             <ul class="tr head sp-only">
-                <li class="th">記事タイトル</li>
+                <li class="th grow-1 text-start">エリア名称</li>
+                <li class="th grow-3 text-start">対象地域</li>
                 <li class="th">掲載サイト</li>
-                <li class="th">掲載日</li>
-                <li class="th">表示状態</li>
                 <li class="th sp-hidden"></li>
             </ul>
             <ul class="tr body">
-                <li class="td">記事タイトル</li>
-                <li class="td">スマイルガーデン + 他2</li>
-                <li class="td">2022/1/25</li>
-                <li class="td">表示</li>
-                <li class="td sp-hidden">
+                <li class="td grow-1 text-start">東北</li>
+                <li class="td grow-3 text-start">青森県/秋田県/岩手県/宮城県/山形県/など</li>
+                <li class="td grow-1">愛知農園</li>
+                <li class="td sp-hidden grow-1">
                     <a href="/regions/form" class="btn btn-detail">詳細</a> 
                 </li>
             </ul>

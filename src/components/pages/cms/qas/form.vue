@@ -6,7 +6,7 @@
     import contentView from '@/components/components/layouts/common/cms/content.vue';
     import imageView from '@/components/components/layouts/common/cms/image.vue';
     import isOpenView from '@/components/components/layouts/common/cms/is_open.vue';
-    import publishDateView from '@/components/components/layouts/common/cms/publish_date.vue';
+    import categoryView from '@/components/components/layouts/common/cms/category.vue';
     import switchView from '@/components/components/layouts/common/cms/switch.vue';
     import confirmView from '@/components/components/layouts/modal/confirm.vue';
     import deleteView from '@/components/components/layouts/modal/delete.vue';
@@ -27,14 +27,13 @@
                 <contentView />
                 <imageView />
 
-                
+                <categoryView />
 
                 <div class="row mb-3">
                     <div class="column">サイト表示</div>
                     <div class="col-md-8 row">
                         <div class="row mb-3">
                             <isOpenView />
-                            <publishDateView />
                         </div>
 
                         <switchView />

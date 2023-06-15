@@ -8,10 +8,10 @@
         <!-- PCのみ -->
         <div class="sp-hidden">
             <div class="search-area">
-                <div class="col-3">
+                <div class="col-2">
                     <input type="text" class="form-control" placeholder="キーワードを入力してください">
                 </div>
-                <div class="col-3">
+                <div class="col-2">
                     <select class="form-select">
                         <option value="">掲載場所</option>
                         <option value="">スマイルガーデン</option>
@@ -31,6 +31,15 @@
                         <option value="">予約</option>
                         <option value="">表示</option>
                         <option value="">非表示</option>
+                    </select>
+                </div>
+                <div class="col-2">
+                    <select class="form-select">
+                        <option value="">分類</option>
+                        <option value="">剪定</option>
+                        <option value="">消毒</option>
+                        <option value="">伐採</option>
+                        <option value="">芝刈り</option>
                     </select>
                 </div>
 
@@ -71,6 +80,7 @@
             <ul class="tr head">
                 <li class="th">記事タイトル</li>
                 <li class="th">掲載サイト</li>
+                <li class="th">分類</li>
                 <li class="th">掲載日</li>
                 <li class="th">表示状態</li>
                 <li class="th sp-hidden"></li>
@@ -78,6 +88,7 @@
             <ul class="tr body">
                 <li class="td">記事タイトル</li>
                 <li class="td">スマイルガーデン</li>
+                <li class="td">剪定</li>
                 <li class="td">2022/2/25</li>
                 <li class="td">予約</li>
                 <li class="td sp-hidden">
@@ -92,6 +103,7 @@
             <ul class="tr head sp-only">
                 <li class="th">記事タイトル</li>
                 <li class="th">掲載サイト</li>
+                <li class="th">分類</li>
                 <li class="th">掲載日</li>
                 <li class="th">表示状態</li>
                 <li class="th sp-hidden"></li>
@@ -99,6 +111,7 @@
             <ul class="tr body">
                 <li class="td">記事タイトル</li>
                 <li class="td">愛知農園</li>
+                <li class="td">剪定</li>
                 <li class="td">2022/1/25</li>
                 <li class="td">予約</li>
                 <li class="td sp-hidden">
@@ -112,6 +125,7 @@
             <ul class="tr head sp-only">
                 <li class="th">記事タイトル</li>
                 <li class="th">掲載サイト</li>
+                <li class="th">分類</li>
                 <li class="th">掲載日</li>
                 <li class="th">表示状態</li>
                 <li class="th sp-hidden"></li>
@@ -119,6 +133,7 @@
             <ul class="tr body">
                 <li class="td">記事タイトル</li>
                 <li class="td"></li>
+                <li class="td">伐採</li>
                 <li class="td">2022/1/25</li>
                 <li class="td">非表示</li>
                 <li class="td sp-hidden">
@@ -132,6 +147,7 @@
             <ul class="tr head sp-only">
                 <li class="th">記事タイトル</li>
                 <li class="th">掲載サイト</li>
+                <li class="th">分類</li>
                 <li class="th">掲載日</li>
                 <li class="th">表示状態</li>
                 <li class="th sp-hidden"></li>
@@ -139,6 +155,7 @@
             <ul class="tr body">
                 <li class="td">記事タイトル</li>
                 <li class="td">スマイルガーデン + 他2</li>
+                <li class="td">芝刈り</li>
                 <li class="td">2022/1/25</li>
                 <li class="td">表示</li>
                 <li class="td sp-hidden">

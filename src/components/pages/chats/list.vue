@@ -1,37 +1,52 @@
 <template>
 
     <div class="content-title">
-        <h6>備品資材一覧</h6>
+        <h5>備品資材一覧</h5>
     </div>
 
     <div class="content-header">
-        <div class="search-area">
-            <div class="col-3">
-                <input type="text" class="form-control" placeholder="キーワードを入力してください">
-            </div>
-            <div class="col-3">
-                <select class="form-control">
-                    <option value="">本部確認中</option>
-                    <option value="">入金待</option>
-                    <option value="">入金済</option>
-                    <option value="">キャンセル</option>
-                    <option value="">発注済</option>
-                    <option value="">発送済</option>
-                </select>
-            </div>
+        <!-- PCのみ -->
+        <div class="sp-hidden">
+            <div class="search-area">
+                <div class="col-3">
+                    <input type="text" class="form-control" placeholder="キーワードを入力してください">
+                </div>
+                <div class="col-3">
+                    <select class="form-select">
+                        <option value="">本部確認中</option>
+                        <option value="">入金待</option>
+                        <option value="">入金済</option>
+                        <option value="">キャンセル</option>
+                        <option value="">発注済</option>
+                        <option value="">発送済</option>
+                    </select>
+                </div>
 
-            <button class="col-2 btn btn-orive search-button">検索する</button>
-        </div>
-        <div class="sort-area d-flex justify-content-end mt-5">
-            <div class="col-2 new-button">
-                <a href="/0062">
-                    <img src="/src/assets/image/plus_icon.svg" alt="">
-                    <span>新規案件登録</span>
-                </a>
+                <button class="col-2 btn btn-orive search-button">検索する</button>
             </div>
+        </div>
+        <!-- /PCのみ -->
+        <!-- SP のみ -->
+        <div class="sp-only">
+            <div class="search-area">
+                <button type="button" class="btn btn-search col-md-12 sp-wide" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    顧客を検索する
+                </button>
+            </div>
+        </div>
+        <!-- /SP のみ -->
+
+
+        <div class="sort-area d-flex justify-content-end mt-5">
+
+            <a href="/materials/form" class="new-button">
+                <img src="/src/assets/image/plus_icon.svg" alt="">
+                <span>新規登録</span>
+            </a>
+
             <img src="/src/assets/image/analysis.svg" alt="">
             <div class="col-1">
-                <select name="" id="" class="form-control">
+                <select name="" id="" class="form-select">
                     <option value="">新しい順</option>
                     <option value="">古い順</option>
                 </select>
@@ -62,11 +77,11 @@
                 <li class="td">2022/09/25</li>
                 <li class="td">本部確認中</li>
                 <li class="td sp-hidden">
-                    <a href="/0062" class="btn btn-detail">詳細</a> 
+                    <a href="/materials/form" class="btn btn-detail">詳細</a> 
                 </li>
             </ul>
             <div class="sp-detail sp-only">
-                <a href="/0062">〉</a>
+                <a href="/materials/form">〉</a>
             </div>
 
             <!-- データの二週目以降の th に当たる箇所に sp-only のクラスを付与する必要あり -->
@@ -91,11 +106,11 @@
                 <li class="td">2022/09/25</li>
                 <li class="td">本部確認中</li>
                 <li class="td sp-hidden">
-                    <a href="/0062" class="btn btn-detail">詳細</a>
+                    <a href="/materials/form" class="btn btn-detail">詳細</a>
                 </li>
             </ul>
             <div class="sp-detail sp-only">
-                <a href="/0062">〉</a>
+                <a href="/materials/form">〉</a>
             </div>
 
             <ul class="tr head sp-only">
@@ -119,11 +134,11 @@
                 <li class="td">2022/09/25</li>
                 <li class="td">本部確認中</li>
                 <li class="td sp-hidden">
-                    <a href="/0062" class="btn btn-detail">詳細</a>
+                    <a href="/materials/form" class="btn btn-detail">詳細</a>
                 </li>
             </ul>
             <div class="sp-detail sp-only">
-                <a href="/0062">〉</a>
+                <a href="/materials/form">〉</a>
             </div>
 
             <ul class="tr head sp-only">
@@ -147,11 +162,11 @@
                 <li class="td">2022/09/25</li>
                 <li class="td">本部確認中</li>
                 <li class="td sp-hidden">
-                    <a href="/0062" class="btn btn-detail">詳細</a>
+                    <a href="/materials/form" class="btn btn-detail">詳細</a>
                 </li>
             </ul>
             <div class="sp-detail sp-only">
-                <a href="/0062">〉</a>
+                <a href="/materials/form">〉</a>
             </div>
 
         </div>
@@ -171,7 +186,43 @@
     </div>
 
 
+    <!-- モーダル -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="/suppliers/list">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <p class="modal-title">顧客を検索する</p>
+                            <div class="col-12 mb-3">
+                                <input type="text" class="form-control" placeholder="キーワードを入力してください">
+                            </div>
+                            <div class="col-12 mb-5">
+                                <select class="form-select">
+                                    <option value="">本部確認中</option>
+                                    <option value="">入金待</option>
+                                    <option value="">入金済</option>
+                                    <option value="">キャンセル</option>
+                                    <option value="">発注済</option>
+                                    <option value="">発送済</option>
+                                </select>
+                            </div>
+                            <div class="col-12 text-center mb-2 search-submit">
+                                <input type="submit" class="btn btn-orive col-12" value="検索する">
+                            </div>
+                            <div class="text-center cancel" data-bs-dismiss="modal">
+                                <a href="javascript:void(0)">キャンセル</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
 
+            </div>
+        </div>
+    </div>
 
 
 </template>

@@ -1,0 +1,288 @@
+.publish-date {
+    min-width: 250px;
+}
+
+.content-body textarea{
+    min-height: 200px;
+}
+
+.image-area {
+    width: 250px;
+    height: 140px;
+    padding: 0;
+    margin-left: calc(var(--bs-gutter-x) * .5);
+}
+.image-area img{
+    width: 120px;
+    height: 120px;
+    margin: 16px;
+}
+.dropzone {
+    padding: 0;
+    text-align: center;
+}
+.dz-preview {
+    margin: 0 auto !important;
+}
+.dz-message {
+    margin: 0 !important;
+}
+
+
+
+/*------------------------------------------------------------
+	スイッチ
+------------------------------------------------------------*/
+/* スイッチ大枠 */
+.switch-wrap {
+    width: 282px;
+}
+.switch-wrap p{
+    width: auto;
+    font-size: 14px !important;
+}
+
+/* スイッチ本体 */
+.switch {
+    line-height    : 35px;                
+    letter-spacing : 0;                   
+    text-align     : center;              
+    font-size      : 24px;                
+    position       : relative;            
+    /* margin         : auto;                 */
+    width          : 70px;               
+    background     : #fff;               
+    padding: 0;
+    top: -7px;
+}
+  
+/* ラベル */
+/* OFF  */
+.switch label {
+    display        : block;               
+    box-sizing     : border-box;          
+    height         : 30px;                
+    border         : 2px solid #DDDDDD;
+    border-radius  : 27px;                
+    background-color: #DDDDDD	;
+  }
+  /* ON  */
+  .switch input[type="checkbox"]:checked +label {
+    border-color   : #555555	;  
+    border         : 2px solid #555555;
+    background-color: #555555	;
+          
+  }
+  
+  /* スイッチ内文字 */
+  /* OFF  */
+  .switch label span:after{
+    content        : "無効";              
+    padding        : 0 0 0 16px;          
+    color          : #FFFFFF;   
+    font-weight: bold;       
+    font-size: 12px;  
+    position: relative;
+    top: -2px;
+  }
+  /* ON  */
+  .switch  input[type="checkbox"]:checked + label span:after{
+    content        : "有効";            
+    padding        : 0 16px 0 0;        
+    color          : #FFFFFF;          
+    font-weight: bold;         
+  }
+  
+  /* スイッチボタン部分 */
+  /* OFF */
+  .switch .swImg {
+    position       : absolute;            
+    width          : 26px;                
+    height         : 26px;                
+    background     : #FFFFFF;            
+    top            : 2px;                 
+    left           : 2px;                
+    border-radius  : 23px;                
+    transition     : .2s;                 
+  }
+  /* ON  */
+  .switch input[type="checkbox"]:checked ~ .swImg {
+    transform      : translateX(90px);    
+    background     : #FFFFFF;            
+    left           : -48px;
+  }
+
+  
+/*------------------------------------------------------------
+	施工事例関連
+------------------------------------------------------------*/
+
+.demand-detail {
+  border: #DDDDDD 1px solid;
+  padding: 30px 0;
+}
+.befor-and-after {
+  width: 16%;
+}
+.space-befor {
+  height: 38px;
+  margin-bottom: 0.5rem!important;
+}
+.space-after {
+  height: 120px;
+}
+.demand-befor {
+  height: 170px;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 65px;
+}
+.demand-after {
+  height: 170px;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 65px;
+}
+.images {
+  width: 21%;
+  min-width: 200px;
+}
+
+.images .form-select{
+  width: 60%;
+  margin: 0 auto;
+}
+.images .image-area {
+  width: 170px;
+  height: 170px;
+  margin: 0 auto;
+}
+.images .dropzone{
+  width: 170px;
+  height: 170px;
+  min-height: 170px;
+  padding: 0 !important;
+}
+.images img{
+  width: 37px;
+  height: 37px;
+  padding: 0 !important;
+  margin: 65px auto;
+}
+
+.images .bar {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.images .bar span {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 60px;
+  border: #555555 solid 2px;
+  margin: 0 auto;
+}
+.demand-star {
+  cursor: pointer;
+}
+.demand-under textarea{
+  min-height: 100px !important;
+}
+
+.construction-title {
+  width: 240px;
+  margin-bottom: 5px;
+}
+.construction-title p{
+  width: 100px;
+  padding-top: 16px;
+  margin-bottom: 0;
+}
+.construction-title div{
+  width: 100px;
+  margin-left: auto;
+}
+.construction-image {
+  width: 240px;
+  height: 170px;
+  padding: 0;
+}
+.construction-image .dropzone {
+  min-height: 170px;
+}
+.construction-image button {
+  width: 37px;
+  height: 37px;
+}
+.construction-image img {
+  margin-top: 65px;
+}
+.construction-content textarea{
+  min-height: 170px !important;
+}
+
+
+@media (min-width: 769px) {
+  .demand-detail {
+    min-width: 950px;
+  }
+}
+@media (max-width: 768px) {
+  .befor-and-after {
+    width: 100%;
+  }
+  .demand-befor{
+    width: 50%;
+    height: auto;
+  }
+  .demand-after{
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px !important;
+  }
+  .images .image-select {
+    width: 100%;
+    min-width: 200px;
+    margin: 0 auto;
+  }
+  .images .image-area {
+    width: 170px;
+    height: 170px;
+  }
+  .images .dropzone{
+    width: 170px;
+    height: 170px;
+    min-height: 170px;
+  }
+  .images img{
+    width: 37px;
+    height: 37px;
+    padding: 0 !important;
+    margin: 65px auto;
+  }
+  .images .bar span {
+    display: none;
+  }
+  .construction-images .row{
+    justify-content: center;
+  }
+  .demand-num {
+    margin-bottom: 0;
+  }
+  .construction-title {
+    /* margin: 0 auto; */
+  }
+  .construction-image {
+    margin-bottom: 5px;
+  }
+}

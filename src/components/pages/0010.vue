@@ -1,6 +1,6 @@
 <script lang="ts">
 </script>
-<style>
+<style lang="scss" scoped> 
 .btn {}
 
 .btn-orive {

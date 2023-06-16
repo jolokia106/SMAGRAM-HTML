@@ -227,7 +227,7 @@
             <div class="sidebar-title">チャット・メール</div>
             <ul class="sidebar-content">
                 <li>
-                    <a href="">
+                    <a href="/chats/list">
                         <p>チャット一覧</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>

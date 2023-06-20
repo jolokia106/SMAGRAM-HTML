@@ -24,9 +24,13 @@ import pref_textsList from './components/pages/cms/pref_texts/list.vue'
 import pref_textsForm from './components/pages/cms/pref_texts/form.vue'
 import regionsList from './components/pages/cms/regions/list.vue'
 import regionsForm from './components/pages/cms/regions/form.vue'
+import bpNewsList from './components/pages/bp_news/list.vue'
+import bpNewsForm from './components/pages/bp_news/form.vue'
 import prAreasForm from './components/pages/pr_areas/form.vue'
 import chatsList from './components/pages/chats/list.vue'
 import chatsForm from './components/pages/chats/form.vue'
+import reportsForm from './components/pages/reports/form.vue'
+
 
 
 const routes = [
@@ -55,9 +59,12 @@ const routes = [
   { path: '/pref_texts/form', name: 'pref_texts_form', component: pref_textsForm},
   { path: '/regions/list', name: 'regions_list', component: regionsList},
   { path: '/regions/form', name: 'regions_form', component: regionsForm},
+  { path: '/bp_news/list', name: 'bp_news_list', component: bpNewsList },
+  { path: '/bp_news/form', name: 'bp_news_form', component: bpNewsForm },
   { path: '/pr_areas/form', name: 'pr_areas_form', component: prAreasForm},
   { path: '/chats/list', name: 'chats_list', component: chatsList},
   { path: '/chats/form', name: 'chats_form', component: chatsForm},
+  { path: '/reports/form', name: 'reports_form', component: reportsForm},
 ]
 
 const router = createRouter({

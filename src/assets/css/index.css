@@ -5,6 +5,9 @@ main {
     margin-top: 90px;
     margin-bottom: 90px;
 }
+body {
+    margin-bottom: 140px !important;
+}
 .orive {
     color: #998641;
 }
@@ -867,4 +870,14 @@ input[type=checkbox]:checked+.checkbox::after {
 
 .pr-areas .check-settings span{
     cursor: pointer;
+}
+
+/* 帳票類項目 */
+.reports .report p {
+    padding-top: 6px;
+}
+.reports .report img {
+    height: 37px;
+    width: 37px;
+    padding: 0;
 }

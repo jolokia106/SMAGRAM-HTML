@@ -192,6 +192,17 @@
                 </li>
             </ul>
         </div>
+        <div class="sidebar-items">
+            <div class="sidebar-title">加盟店向けお知らせ管理</div>
+            <ul class="sidebar-content">
+                <li>
+                    <a href="/bp_news/list">
+                        <p>本部からのお知らせ</p>
+                        <img src="/src/assets/image/angle-right.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
         
         <div class="sidebar-items">
             <div class="sidebar-title">広告管理</div>
@@ -215,7 +226,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="/reports/form">
                         <p>帳票類項目</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>
@@ -229,12 +240,6 @@
                 <li>
                     <a href="/chats/list">
                         <p>チャット一覧</p>
-                        <img src="/src/assets/image/angle-right.svg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <p>メール一覧</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>
                 </li>

@@ -52,7 +52,3 @@
     </div>
   </div>
 </template>
-
-<style>
-@import 'bootstrap';
-</style>

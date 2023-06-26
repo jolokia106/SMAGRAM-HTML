@@ -16,6 +16,8 @@ import campaignsList from './components/pages/cms/campaigns/list.vue'
 import campaignsForm from './components/pages/cms/campaigns/form.vue'
 import prsList from './components/pages/cms/prs/list.vue'
 import prsForm from './components/pages/cms/prs/form.vue'
+import othersList from './components/pages/cms/others/list.vue'
+import othersForm from './components/pages/cms/others/form.vue'
 import constructionsList from './components/pages/cms/constructions/list.vue'
 import constructionsForm from './components/pages/cms/constructions/form.vue'
 import qasList from './components/pages/cms/qas/list.vue'
@@ -30,6 +32,8 @@ import prAreasForm from './components/pages/pr_areas/form.vue'
 import chatsList from './components/pages/chats/list.vue'
 import chatsForm from './components/pages/chats/form.vue'
 import reportsForm from './components/pages/reports/form.vue'
+import expensesForm from './components/pages/expenses/form.vue'
+import expensesList from './components/pages/expenses/list.vue'
 
 
 
@@ -51,6 +55,8 @@ const routes = [
   { path: '/campaigns/form', name: 'campaigns_form', component: campaignsForm },
   { path: '/prs/list', name: 'prs_list', component: prsList},
   { path: '/prs/form', name: 'prs_form', component: prsForm},
+  { path: '/others/list', name: 'others_list', component: othersList},
+  { path: '/others/form', name: 'others_form', component: othersForm},
   { path: '/constructions/list', name: 'constructions_list', component: constructionsList},
   { path: '/constructions/form', name: 'constructions_form', component: constructionsForm},
   { path: '/qas/list', name: 'qas_list', component: qasList},
@@ -65,6 +71,8 @@ const routes = [
   { path: '/chats/list', name: 'chats_list', component: chatsList},
   { path: '/chats/form', name: 'chats_form', component: chatsForm},
   { path: '/reports/form', name: 'reports_form', component: reportsForm},
+  { path: '/expenses/list', name: 'expenses_list', component: expensesList},
+  { path: '/expenses/form', name: 'expenses_form', component: expensesForm},
 ]
 
 const router = createRouter({

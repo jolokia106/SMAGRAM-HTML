@@ -174,12 +174,10 @@
     </div>
 </template>
 
-<script>
+<script scoped>
     $(function(){
         var items = $('#items');
         var i = 2;
-        console.log($(".item").length);
-        console.log($(".item").length > 1);
         if($(".item").length == 1){
             $('#remove').hide();
         }
@@ -210,7 +208,7 @@
         function changeTotal(){
             var price = 0;
             $('.item').each(function(index) {
-                if($(this).find('.buy-amount').val() && $(this).find('.buy-num').val() && $(this).find('.buy-postage').val()){
+                if($(this).find('.buy-amount').val() && $(this).find('.buy-num').val()){
                     price += ( Number($(this).find('.buy-amount').val()) * Number($(this).find('.buy-num').val()) ) + Number($(this).find('.buy-postage').val());
                 }
             });

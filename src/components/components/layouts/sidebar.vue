@@ -113,7 +113,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="/expenses/list">
                         <p>特別売上/費用管理</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>
@@ -163,6 +163,12 @@
                 <li>
                     <a href="/prs/list">
                         <p>広報・PR</p>
+                        <img src="/src/assets/image/angle-right.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="/others/list">
+                        <p>その他</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>
                 </li>

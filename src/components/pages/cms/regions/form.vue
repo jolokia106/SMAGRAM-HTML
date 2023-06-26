@@ -13,7 +13,7 @@
 </script>
 <template>
     <div class="content-title">
-        <h5>重要なお知らせ詳細</h5>
+        <h5>独自エリアエディタ詳細</h5>
     </div>
 
     <div class="content-body">
@@ -21,8 +21,7 @@
             <h5>記事情報</h5>
         </div>
         <div class="container">
-            <form action="/news/list" method="GET">
-
+            <form action="/regions/list" method="GET">
                 <div class="row mb-5">
                     <div class="column">エリア区分</div>
                     <div class="col-md-8">
@@ -174,6 +173,16 @@
 <script>
     $(function(){
         // エリア区分選択時の処理
-
+        $("input[name='area']").on('change', function(){
+            if($("input[name='area']:checked").val() == 1){
+                $('#selectPref').show();
+                $('#cities').show();
+                $('#prefs').hide();
+            }else{
+                $('#selectPref').hide();
+                $('#cities').hide();
+                $('#prefs').show();
+            }
+        });
     });
 </script>

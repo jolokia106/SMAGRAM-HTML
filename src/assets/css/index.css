@@ -8,6 +8,25 @@ main {
 body {
     margin-bottom: 140px !important;
 }
+/* width  */
+.wi-50{
+    width: 50px !important;
+}
+.wi-100{
+    width: 100px !important;
+}
+.wi-150{
+    width: 150px !important;
+}
+.wi-170{
+    width: 170px !important;
+}
+.wi-200{
+    width: 200px !important;
+}
+.wi-250{
+    width: 200px !important;
+}
 .orive {
     color: #998641;
 }
@@ -790,8 +809,8 @@ input[type=checkbox]:checked+.checkbox::after {
     margin: 30px auto;
 }
 .content-body .add-buttons img {
-    height: 30px;
-    width: 30px;
+    height: 37px;
+    width: 37px;
     cursor: pointer;
     fill: #998641;
     margin: 0 30px;
@@ -880,4 +899,50 @@ input[type=checkbox]:checked+.checkbox::after {
     height: 37px;
     width: 37px;
     padding: 0;
+}
+
+/* 特別売上/費用管理 */
+.expenses {
+    max-width: 1920px !important;
+}
+.expenses .e-item{
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+.expenses .e-item p{
+    width: 55px;
+    padding: 5px 0 0 0;
+    text-align: right;
+}
+.expenses .e-item div{
+    width: 120px;
+}
+.expenses .e-amount {
+    padding-top: 5px;
+}
+.expenses .e-total {
+    border-top: #BBBBBB 1px solid;
+    border-bottom: #BBBBBB 1px solid;
+}
+.expenses .e-remarks {
+    border-bottom: #BBBBBB 1px solid;
+}
+
+@media (max-width: 992px) {
+    .expenses .e-item div,
+    .expenses .e-item select{
+        width: 100% !important; 
+    }
+    .max-wi {
+        width: 100% !important;
+    }
+    .expenses .e-item p{
+        text-align: left;
+    }
+    .e-items {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: #BBBBBB 1px solid ;
+    }
 }

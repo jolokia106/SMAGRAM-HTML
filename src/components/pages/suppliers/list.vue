@@ -24,12 +24,13 @@
                     </div>
                     <div class="col-2">
                         <select class="form-select">
-                            <option value="">本部確認中</option>
-                            <option value="">入金待</option>
-                            <option value="">入金済</option>
-                            <option value="">キャンセル</option>
-                            <option value="">発注済</option>
-                            <option value="">発送済</option>
+                            <option value="">事業カテゴリ</option>
+                            <option value="">smileガーデン</option>
+                            <option value="">smileエクステリア</option>
+                            <option value="">植木市場</option>
+                            <option value="">GARDEM-JOB</option>
+                            <option value="">お庭の達人</option>
+                            <option value="">ガーデンビジネス協会</option>
                         </select>
                     </div>
                     <div class="col-2">

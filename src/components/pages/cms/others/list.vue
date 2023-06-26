@@ -1,10 +1,7 @@
-<script setup>
-    import duplicationView from '@/components/components/layouts/modal/duplication.vue';
-</script>
 <template>
 
     <div class="content-title">
-        <h5>キャンペーン一覧</h5>
+        <h5>その他一覧</h5>
     </div>
 
     <div class="content-header">
@@ -54,7 +51,7 @@
 
         <div class="sort-area d-flex justify-content-end mt-5">
 
-            <a href="/campaigns/form" class="new-button">
+            <a href="/others/form" class="new-button">
                 <img src="/src/assets/image/plus_icon.svg" alt="">
                 <span>新規登録</span>
             </a>
@@ -84,12 +81,11 @@
                 <li class="td">2022/2/25</li>
                 <li class="td">予約</li>
                 <li class="td sp-hidden">
-                    <a href="/campaigns/form" class="btn btn-detail">詳細</a> 
-                    <a href="javascript:void(0);" class="btn btn-detail ms-2" data-bs-toggle="modal" data-bs-target="#duplicationModal">複製</a> 
+                    <a href="/others/form" class="btn btn-detail">詳細</a> 
                 </li>
             </ul>
             <div class="sp-detail sp-only">
-                <a href="/campaigns/form">〉</a>
+                <a href="/others/form">〉</a>
             </div>
 
             <!-- データの二週目以降の th に当たる箇所に sp-only のクラスを付与する必要あり -->
@@ -106,12 +102,11 @@
                 <li class="td">2022/1/25</li>
                 <li class="td">予約</li>
                 <li class="td sp-hidden">
-                    <a href="/campaigns/form" class="btn btn-detail">詳細</a> 
-                    <a href="javascript:void(0);" class="btn btn-detail ms-2" data-bs-toggle="modal" data-bs-target="#duplicationModal">複製</a> 
+                    <a href="/others/form" class="btn btn-detail">詳細</a> 
                 </li>
             </ul>
             <div class="sp-detail sp-only">
-                <a href="/campaigns/form">〉</a>
+                <a href="/others/form">〉</a>
             </div>
 
             <ul class="tr head sp-only">
@@ -127,12 +122,11 @@
                 <li class="td">2022/1/25</li>
                 <li class="td">非表示</li>
                 <li class="td sp-hidden">
-                    <a href="/campaigns/form" class="btn btn-detail">詳細</a> 
-                    <a href="javascript:void(0);" class="btn btn-detail ms-2" data-bs-toggle="modal" data-bs-target="#duplicationModal">複製</a> 
+                    <a href="/others/form" class="btn btn-detail">詳細</a> 
                 </li>
             </ul>
             <div class="sp-detail sp-only">
-                <a href="/campaigns/form">〉</a>
+                <a href="/others/form">〉</a>
             </div>
 
             <ul class="tr head sp-only">
@@ -148,12 +142,11 @@
                 <li class="td">2022/1/25</li>
                 <li class="td">表示</li>
                 <li class="td sp-hidden">
-                    <a href="/campaigns/form" class="btn btn-detail">詳細</a> 
-                    <a href="javascript:void(0);" class="btn btn-detail ms-2" data-bs-toggle="modal" data-bs-target="#duplicationModal">複製</a> 
+                    <a href="/others/form" class="btn btn-detail">詳細</a> 
                 </li>
             </ul>
             <div class="sp-detail sp-only">
-                <a href="/campaigns/form">〉</a>
+                <a href="/others/form">〉</a>
             </div>
 
         </div>
@@ -172,57 +165,56 @@
         </ul>
     </div>
 
-    <form action="/campaigns/list">
 
     <!-- モーダル -->
     <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <p class="modal-title">顧客を検索する</p>
-                        <div class="col-12 mb-3">
-                            <input type="text" class="form-control" placeholder="キーワードを入力してください">
-                        </div>
-                        <div class="col-12 mb-3">
-                            <select class="form-select">
-                                <option value="">掲載場所</option>
-                                <option value="">スマイルガーデン</option>
-                                <option value="">スマイルエクステリア</option>
-                                <option value="">愛知農園</option>
-                                <option value="">スマイルガーデン庭造り</option>
-                                <option value="">GARDEN-JOB</option>
-                                <option value="">お庭の窓口</option>
-                                <option value="">ガーデンメーカ</option>
-                                <option value="">植木市場</option>
-                                <option value="">お庭の達人</option>
-                            </select>
-                        </div>
-                        <div class="col-12 mb-5">
-                            <select class="form-select">
-                                <option value="">表示状態</option>
-                                <option value="">予約</option>
-                                <option value="">表示</option>
-                                <option value="">非表示</option>
-                            </select>
-                        </div>
-                        <div class="col-12 text-center mb-2 search-submit">
-                            <input type="submit" class="btn btn-orive col-12" value="検索する">
-                        </div>
-                        <div class="text-center cancel" data-bs-dismiss="modal">
-                            <a href="javascript:void(0)">キャンセル</a>
+                <form action="/others/list">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <p class="modal-title">顧客を検索する</p>
+                            <div class="col-12 mb-3">
+                                <input type="text" class="form-control" placeholder="キーワードを入力してください">
+                            </div>
+                            <div class="col-12 mb-3">
+                                <select class="form-select">
+                                    <option value="">掲載場所</option>
+                                    <option value="">スマイルガーデン</option>
+                                    <option value="">スマイルエクステリア</option>
+                                    <option value="">愛知農園</option>
+                                    <option value="">スマイルガーデン庭造り</option>
+                                    <option value="">GARDEN-JOB</option>
+                                    <option value="">お庭の窓口</option>
+                                    <option value="">ガーデンメーカ</option>
+                                    <option value="">植木市場</option>
+                                    <option value="">お庭の達人</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-5">
+                                <select class="form-select">
+                                    <option value="">表示状態</option>
+                                    <option value="">予約</option>
+                                    <option value="">表示</option>
+                                    <option value="">非表示</option>
+                                </select>
+                            </div>
+                            <div class="col-12 text-center mb-2 search-submit">
+                                <input type="submit" class="btn btn-orive col-12" value="検索する">
+                            </div>
+                            <div class="text-center cancel" data-bs-dismiss="modal">
+                                <a href="javascript:void(0)">キャンセル</a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
+
             </div>
         </div>
     </div>
-    <!-- 複製モーダル -->
-    <duplicationView />
 
-    </form>
 
 </template>

@@ -33,7 +33,6 @@
                     </div>
                 </div>
                 
-
                 <div class="row mb-3">
                     <div class="column">サイト表示</div>
                     <div class="col-md-8 row">
@@ -47,21 +46,21 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 row publish-date mb-3">
-                                    <p class="col-md-5 px-0">掲載日</p>
+                                    <p class="col-md-5 px-0">掲載終了日</p>
                                     <div class="col-md-7 px-0">
-                                        <input type="date" class="form-control mx-0" id="start">
+                                        <input type="date" class="form-control mx-0" id="end">
                                     </div>
                                 </div>
                                 <div class="col-md-6 row publish-date mb-3">
                                     <p class="col-md-5 px-0">対象人数</p>
                                     <div class="col-md-7 px-0">
-                                        <input type="date" class="form-control mx-0" id="start">
+                                        <input type="number" class="form-control mx-0" id="people">
                                     </div>
                                 </div>
                                 <div class="col-md-6 row publish-date mb-3">
                                     <p class="col-md-5 px-0">差引係数/日</p>
                                     <div class="col-md-7 mx-0">
-                                        <p>0000</p>
+                                        <p class="coefficient">0000</p>
                                     </div>
                                 </div>
                             </div>
@@ -88,10 +87,26 @@
                 
         </div>
     </div>
-
-
-
-
-
-
 </template>
+
+
+<script>
+    $(function(){
+        $('#start, #end, #people').on('change', function(){
+            if($('#start').val() && $('#end').val() && $('#people').val()){
+                var start = new Date($('#start').val());
+                var end = new Date($('#end').val());
+                var diffTime = end.getTime() - start.getTime();
+                var diffDay = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+                var coefficient = $('#people').val() / diffDay;
+                // 小数点第1位までを四捨五入
+                var num = Math.round( coefficient * 10) / 10 ;
+                $('.coefficient').text(num);
+            }
+            else if(!$('#people').val()){
+                $('.coefficient').text('0000');
+            }
+        });
+
+    });
+</script>

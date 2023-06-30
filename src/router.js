@@ -34,7 +34,17 @@ import chatsForm from './components/pages/chats/form.vue'
 import reportsForm from './components/pages/reports/form.vue'
 import expensesForm from './components/pages/expenses/form.vue'
 import expensesList from './components/pages/expenses/list.vue'
-
+import bpExpensesForm from './components/pages/bp_expenses/form.vue'
+import bpExpensesList from './components/pages/bp_expenses/list.vue'
+import funnelsForm from './components/pages/funnels/form.vue'
+import serviceAddressForm from './components/pages/service_address/form.vue'
+import serviceAddressList from './components/pages/service_address/list.vue'
+import categoriesForm from './components/pages/categories/form.vue'
+import categoriesList from './components/pages/categories/list.vue'
+import mstCampaignsList from './components/pages/mst_campaigns/list.vue'
+import mstCampaignsForm from './components/pages/mst_campaigns/form.vue'
+import servicePricesForm from './components/pages/service_prices/form.vue'
+import biList from './components/pages/bi/list.vue'
 
 
 const routes = [
@@ -73,6 +83,17 @@ const routes = [
   { path: '/reports/form', name: 'reports_form', component: reportsForm},
   { path: '/expenses/list', name: 'expenses_list', component: expensesList},
   { path: '/expenses/form', name: 'expenses_form', component: expensesForm},
+  { path: '/bp_expenses/list', name: 'bp_expenses_list', component: bpExpensesList},
+  { path: '/bp_expenses/form', name: 'bp_expenses_form', component: bpExpensesForm},
+  { path: '/funnels', name: 'funnels_form', component: funnelsForm},
+  { path: '/service_address/list', name: 'service_address_list', component: serviceAddressList},
+  { path: '/service_address/form', name: 'service_address_form', component: serviceAddressForm},
+  { path: '/categories/list', name: 'categories_list', component: categoriesList},
+  { path: '/categories/form', name: 'categories_form', component: categoriesForm},
+  { path: '/mst_campaigns/list', name: 'mst_campaigns_list', component: mstCampaignsList},
+  { path: '/mst_campaigns/form', name: 'mst_campaigns_form', component: mstCampaignsForm },
+  { path: '/service_prices', name: 'service_prices_form', component: servicePricesForm },
+  { path: '/bi', name: 'bi_list', component: biList },
 ]
 
 const router = createRouter({

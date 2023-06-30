@@ -3,6 +3,7 @@
 </style>
 <script setup>
     import addressModal from '@/components/components/layouts/modal/address_modal.vue';
+    import confirmView from '@/components/components/layouts/modal/confirm.vue';
 </script>
 <template>
     <div class="content-title">
@@ -360,12 +361,202 @@
             <div class="content-body-title">
                 <h5>請求書保存</h5>
             </div>
-            <div class="container mb-5">
-                <button type="button" class="btn btn-orive sp-wide">請求書確認</button>
+            <div class="row">
+                <div class="container mb-5 w-auto">
+                    <button type="button" class="btn btn-orive sp-wide"  data-bs-toggle="modal" data-bs-target="#invoiceModal">2022年</button>
+                </div>
+                <div class="container mb-5 w-auto">
+                    <button type="button" class="btn btn-orive sp-wide"  data-bs-toggle="modal" data-bs-target="#invoiceModal">2023年</button>
+                </div>
+                <div class="container mb-5 w-auto">
+                    <button type="button" class="btn btn-orive sp-wide"  data-bs-toggle="modal" data-bs-target="#invoiceModal">2024年</button>
+                </div>
             </div>
+
+
             <div class="container text-center mb-3">
-                <input type="submit" class="btn btn-orive sp-wide" value="登録">
+                <input type="button" class="btn btn-orive sp-wide" value="登録" data-bs-toggle="modal" data-bs-target="#confirmModal">
             </div>
+
+            <!-- 請求書モーダル -->
+            <div class="modal fade invoices-modal" id="invoiceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+        
+                                <p class="mt-3 mb-5 text-center">入力した内容を登録します。</p>
+                                <div class="row text-center">
+                                    <div class="mb-5 col-md-6 justify-content-center">
+                                        <p>1月</p>
+                                        <div class="col-md-8 image-area mx-auto">
+                                            <form action="/upload" class="dropzone" id="my-awesome-dropzone">
+                                                <div class="dz-default dz-message">
+                                                    <button class="dz-button" type="button">
+                                                        <img src="/src/assets/image/picture.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="mb-5 col-md-6 justify-content-center">
+                                        <p>2月</p>
+                                        <div class="col-md-8 image-area mx-auto">
+                                            <form action="/upload" class="dropzone" id="my-awesome-dropzone">
+                                                <div class="dz-default dz-message">
+                                                    <button class="dz-button" type="button">
+                                                        <img src="/src/assets/image/picture.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="mb-5 col-md-6 justify-content-center">
+                                        <p>3月</p>
+                                        <div class="col-md-8 image-area mx-auto">
+                                            <form action="/upload" class="dropzone" id="my-awesome-dropzone">
+                                                <div class="dz-default dz-message">
+                                                    <button class="dz-button" type="button">
+                                                        <img src="/src/assets/image/picture.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="mb-5 col-md-6 justify-content-center">
+                                        <p>4月</p>
+                                        <div class="col-md-8 image-area mx-auto">
+                                            <form action="/upload" class="dropzone" id="my-awesome-dropzone">
+                                                <div class="dz-default dz-message">
+                                                    <button class="dz-button" type="button">
+                                                        <img src="/src/assets/image/picture.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="mb-5 col-md-6 justify-content-center">
+                                        <p>5月</p>
+                                        <div class="col-md-8 image-area mx-auto">
+                                            <form action="/upload" class="dropzone" id="my-awesome-dropzone">
+                                                <div class="dz-default dz-message">
+                                                    <button class="dz-button" type="button">
+                                                        <img src="/src/assets/image/picture.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="mb-5 col-md-6 justify-content-center">
+                                        <p>6月</p>
+                                        <div class="col-md-8 image-area mx-auto">
+                                            <form action="/upload" class="dropzone" id="my-awesome-dropzone">
+                                                <div class="dz-default dz-message">
+                                                    <button class="dz-button" type="button">
+                                                        <img src="/src/assets/image/picture.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="mb-5 col-md-6 justify-content-center">
+                                        <p>7月</p>
+                                        <div class="col-md-8 image-area mx-auto">
+                                            <form action="/upload" class="dropzone" id="my-awesome-dropzone">
+                                                <div class="dz-default dz-message">
+                                                    <button class="dz-button" type="button">
+                                                        <img src="/src/assets/image/picture.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="mb-5 col-md-6 justify-content-center">
+                                        <p>8月</p>
+                                        <div class="col-md-8 image-area mx-auto">
+                                            <form action="/upload" class="dropzone" id="my-awesome-dropzone">
+                                                <div class="dz-default dz-message">
+                                                    <button class="dz-button" type="button">
+                                                        <img src="/src/assets/image/picture.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="mb-5 col-md-6 justify-content-center">
+                                        <p>9月</p>
+                                        <div class="col-md-8 image-area mx-auto">
+                                            <form action="/upload" class="dropzone" id="my-awesome-dropzone">
+                                                <div class="dz-default dz-message">
+                                                    <button class="dz-button" type="button">
+                                                        <img src="/src/assets/image/picture.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="mb-5 col-md-6 justify-content-center">
+                                        <p>10月</p>
+                                        <div class="col-md-8 image-area mx-auto">
+                                            <form action="/upload" class="dropzone" id="my-awesome-dropzone">
+                                                <div class="dz-default dz-message">
+                                                    <button class="dz-button" type="button">
+                                                        <img src="/src/assets/image/picture.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="mb-5 col-md-6 justify-content-center">
+                                        <p>11月</p>
+                                        <div class="col-md-8 image-area mx-auto">
+                                            <form action="/upload" class="dropzone" id="my-awesome-dropzone">
+                                                <div class="dz-default dz-message">
+                                                    <button class="dz-button" type="button">
+                                                        <img src="/src/assets/image/picture.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="mb-5 col-md-6 justify-content-center">
+                                        <p>12月</p>
+                                        <div class="col-md-8 image-area mx-auto">
+                                            <form action="/upload" class="dropzone" id="my-awesome-dropzone">
+                                                <div class="dz-default dz-message">
+                                                    <button class="dz-button" type="button">
+                                                        <img src="/src/assets/image/picture.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 確認モーダル -->
+            <confirmView />
+
         </form>
     </div>
 

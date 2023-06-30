@@ -36,6 +36,15 @@
                 <div class="row mb-3">
                     <div class="column">サイト表示</div>
                     <div class="col-md-8 row">
+                        <div class="row mb-3 switch-wrap col-md-12">
+                            <p class="col-md-4">フローティング表示対象</p>
+                            <div class="switch col-md-8">
+                                <input type="checkbox" id="floating">
+                                <label for="floating"><span></span></label>
+                                <div class="swImg"></div>
+                            </div>
+                        </div>
+
                         <div class="row mb-3">
                             <isOpenView />
                             <div class="col-md-8 row">
@@ -98,9 +107,10 @@
                 var end = new Date($('#end').val());
                 var diffTime = end.getTime() - start.getTime();
                 var diffDay = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-                var coefficient = $('#people').val() / diffDay;
-                // 小数点第1位までを四捨五入
-                var num = Math.round( coefficient * 10) / 10 ;
+                var coefficient = diffDay / $('#people').val();
+                // 小数点以下を四捨五入
+
+                var num = Math.floor( coefficient) ;
                 $('.coefficient').text(num);
             }
             else if(!$('#people').val()){

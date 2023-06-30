@@ -946,3 +946,285 @@ input[type=checkbox]:checked+.checkbox::after {
         border-bottom: #BBBBBB 1px solid ;
     }
 }
+/* 加盟店ファネルマスタ */
+.funnel-items .funnel-item {
+    margin: 5px 0;
+}
+.funnel-items .funnel-item img{
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+}
+.funnel-items .funnel-item p{
+    width: auto;
+    padding: 6px;
+}
+
+/* サービス料金マスタ */
+.service-price-green {
+    width: 100%;
+    min-width: 1200px;
+}
+.service-price-green *{
+    font-size: 12px !important;
+}
+
+.service-price-green tr{
+    /* border: blue 1px solid; */
+}
+.service-price-green th{
+    border: #FFFFFF 2px solid;
+    background-color: #275e24;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+}
+.service-price-green td {
+    border: #FFFFFF 2px solid;
+    background-color: #92d050;
+    font-weight: bold;
+    text-align: center;
+}
+
+.service-price-green input {
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    background-color: #92d050;
+    border: none;
+}
+.service-price-green .remarks {
+    position: relative;
+}
+.service-price-green textarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #92d050;
+    border: none;
+    resize: none;
+}
+
+.service-price-green .gomi{
+    background-color: #e0ffa3 !important;
+}
+.service-price-green .gomi input{
+    background-color: #e0ffa3 !important;
+    width: 40%;
+}
+
+.service-price-green .wakaba td,
+.service-price-green .wakaba td input,
+.service-price-green .wakaba td textarea{
+    background-color: #bae18f;
+}
+.service-price-green .veludo th{
+    background-color: #163414;
+}
+
+
+.service-price-orange {
+    width: 100%;
+    min-width: 1200px;
+}
+.service-price-orange *{
+    font-size: 12px !important;
+}
+
+.service-price-orange tr{
+    /* border: blue 1px solid; */
+}
+.service-price-orange th{
+    border: #FFFFFF 2px solid;
+    background-color: #ee5924;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+}
+.service-price-orange td {
+    border: #FFFFFF 2px solid;
+    background-color: #fad1b8;
+    font-weight: bold;
+    text-align: center;
+}
+
+.service-price-orange input {
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    background-color: #fad1b8;
+    border: none;
+}
+.service-price-orange .remarks {
+    position: relative;
+}
+.service-price-orange textarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fad1b8;
+    border: none;
+    resize: none;
+}
+
+.service-price-orange .gomi input{
+    /* background-color: #e0ffa3 !important; */
+    width: 40%;
+}
+
+.service-price-orange .rose td,
+.service-price-orange .rose td input,
+.service-price-orange .rose td textarea{
+    background-color: #fac5bc;
+}
+.service-price-orange .veludo th{
+    background-color: #163414;
+}
+
+
+
+.service-price-blue {
+    width: 100%; 
+    min-width: 1200px;
+}
+.service-price-blue *{
+    font-size: 12px !important;
+}
+
+.service-price-blue tr{
+    /* border: blue 1px solid; */
+}
+.service-price-blue th{
+    border: #FFFFFF 2px solid;
+    background-color: #2f6fbc;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+}
+.service-price-blue td {
+    border: #FFFFFF 2px solid;
+    background-color: #99c6e4;
+    font-weight: bold;
+    text-align: center;
+}
+
+.service-price-blue input {
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    background-color: #99c6e4;
+    border: none;
+}
+.service-price-blue .remarks {
+    position: relative;
+}
+.service-price-blue textarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #99c6e4;
+    border: none;
+    resize: none;
+}
+
+.service-price-blue .gomi input{
+    /* background-color: #e0ffa3 !important; */
+    width: 40%;
+}
+
+.service-price-blue .sky-blue td,
+.service-price-blue .sky-blue td input,
+.service-price-blue .sky-blue td textarea{
+    background-color: #cce3f2;
+}
+
+
+
+.service-price-winter {
+    width: 100%; 
+    min-width: 1200px;
+}
+.service-price-winter *{
+    font-size: 12px !important;
+}
+
+.service-price-winter tr{
+    /* border: blue 1px solid; */
+}
+.service-price-winter th{
+    border: #FFFFFF 2px solid;
+    background-color: #28abe3;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+}
+.service-price-winter td {
+    border: #FFFFFF 2px solid;
+    background-color: #aee0f4;
+    font-weight: bold;
+    text-align: center;
+}
+
+.service-price-winter input {
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    background-color: #aee0f4;
+    border: none;
+}
+.service-price-winter .remarks {
+    position: relative;
+}
+.service-price-winter textarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #aee0f4;
+    border: none;
+    resize: none;
+}
+
+.service-price-winter .gomi input{
+    /* background-color: #e0ffa3 !important; */
+    width: 40%;
+}
+
+.service-price-winter .sky-blue td,
+.service-price-winter .sky-blue td input,
+.service-price-winter .sky-blue td textarea{
+    background-color: #d4eef9;
+}
+
+
+.invoices-modal .modal-dialog {
+    max-width: 800px;
+}
+.invoices-modal .image-area {
+    width: 250px;
+    height: 140px;
+    padding: 0;
+    margin-left: calc(var(--bs-gutter-x) * .5);
+}
+.invoices-modal .image-area img{
+    width: 120px;
+    height: 120px;
+    margin: 16px;
+}
+.invoices-modal .dropzone {
+    padding: 0;
+    text-align: center;
+}
+.invoices-modal .dz-preview {
+    margin: 0 auto !important;
+}
+.invoices-modal .dz-message {
+    margin: 0 !important;
+}

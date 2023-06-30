@@ -119,6 +119,12 @@
                     </a>
                 </li>
                 <li>
+                    <a href="/bp_expenses/list">
+                        <p>備品費用管理</p>
+                        <img src="/src/assets/image/angle-right.svg" alt="">
+                    </a>
+                </li>
+                <li>
                     <a href="">
                         <p>請求データ一覧</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
@@ -237,6 +243,36 @@
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>
                 </li>
+                <li>
+                    <a href="/funnels">
+                        <p>加盟店ファネルマスタ</p>
+                        <img src="/src/assets/image/angle-right.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="/service_address/list">
+                        <p>サービス先住所マスタ</p>
+                        <img src="/src/assets/image/angle-right.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="/categories/list">
+                        <p>カテゴリマスタ</p>
+                        <img src="/src/assets/image/angle-right.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="/mst_campaigns/list">
+                        <p>キャンペーンマスタ</p>
+                        <img src="/src/assets/image/angle-right.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="/service_prices">
+                        <p>サービス料金マスタ</p>
+                        <img src="/src/assets/image/angle-right.svg" alt="">
+                    </a>
+                </li>
             </ul>
         </div>
 
@@ -256,7 +292,7 @@
             <div class="sidebar-title">BI</div>
             <ul class="sidebar-content">
                 <li>
-                    <a href="">
+                    <a href="/bi">
                         <p>BI作成</p>
                         <img src="/src/assets/image/angle-right.svg" alt="">
                     </a>

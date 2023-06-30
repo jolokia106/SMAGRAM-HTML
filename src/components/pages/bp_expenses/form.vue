@@ -6,7 +6,7 @@
 </script>
 <template>
     <div class="content-title">
-        <h5>特別売上/費用管理一覧</h5>
+        <h5>備品費用管理一覧</h5>
     </div>
 
     <div class="content-body">
@@ -26,12 +26,8 @@
                     <div class="column">名目</div>
                     <div class="col-md-8">
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="nominal" id="claim" value="1" checked>
+                            <input class="form-check-input" type="radio" name="nominal" id="claim" value="1" checked disabled="disabled">
                             <label class="form-check-label" for="claim">請求</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="nominal" id="payment" value="2">
-                            <label class="form-check-label" for="payment">支払</label>
                         </div>
                     </div>
                 </div>
@@ -44,12 +40,13 @@
                             <div class="row e-item sp-wide">
                                 <p>種別</p>
                                 <div class="sp-wide">
-                                    <select class="form-select">
+                                    <select class="form-select" disabled="disabled">
                                         <option value="">加盟金</option>
                                         <option value="">違約金</option>
                                         <option value="">立替金</option>
                                         <option value="">研修費</option>
                                         <option value="">総会費</option>
+                                        <option value="" selected>備品代</option>
                                     </select>
                                 </div>
                             </div>
@@ -112,57 +109,6 @@
                     </div>
                 </div>
 
-                <!-- 支払のみ表示 -->
-                <div id="paymentForm" style="display: none;">
-                    <div class="col-md-8 mb-3">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="tax" id="without" value="1" checked>
-                            <label class="form-check-label" for="without">税別</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="tax" id="included" value="2">
-                            <label class="form-check-label" for="included">税込</label>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="row e-item sp-wide">
-                            <p class="">種別</p>
-                            <div class="wi-150 sp-wide">
-                                <select class="form-select">
-                                    <option value="">紹介料</option>
-                                    <option value="">直営店外注費</option>
-                                    <option value="">直営店仕入費</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row e-item sp-wide">
-                            <p>その他</p>
-                            <div class="wi-200 sp-wide">
-                                <input type="text" class="form-control" placeholder="テキスト">
-                            </div>
-                        </div>
-                        <div class="row e-item sp-wide">
-                            <p class="wi-50">小計</p>
-                            <div class="sp-wide">
-                                <input type="number" class="form-control subtotal" placeholder="00,000">
-                            </div>
-                        </div>
-                        <div class="row e-item sp-wide">
-                            <p class="wi-60">消費税</p>
-                            <div class="wi-100 sp-wide e-amount">
-                                <span>0,000</span> 円
-                            </div>
-                        </div>
-                        <div class="row e-item sp-wide">
-                            <p class="wi-100">合計 (税込)</p>
-                            <div class="wi-100 sp-wide e-amount">
-                                <span>0,000</span> 円
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="col-md-8 row mt-5 pt-5 pb-5 e-total">
                         <div class="column">総額</div>
                         <div class="col-md-7">
@@ -194,11 +140,9 @@
             <p class="wi-100">清算タイプ</p>
             <div class="wi-150 sp-wide">
                 <select class="form-select max-wi">
-                    <option value="">加盟金</option>
-                    <option value="">違約金</option>
-                    <option value="">立替金</option>
-                    <option value="">研修費</option>
-                    <option value="">総会費</option>
+                    <option value="">相殺</option>
+                    <option value="">振込</option>
+                    <option value="">支払</option>
                 </select>
             </div>
         </div>
@@ -244,21 +188,21 @@
         if($(".e-items").length == 1){
             $('#remove').hide();
         }
-        $('#add').on('click',function(){
-            var item = $('#original').clone(true);
-            item.show();
-            item.addClass('e-items');
-            item.attr('id', '');
-            items.append(item);
-            $('#remove').show();
-        });
-        $('#remove').on('click',function(){
-            $($(".e-items")[$(".e-items").length-1]).remove(); 
-            if($(".e-items").length == 1){
-                $('#remove').hide();
-            }
-            changeClaim();
-        });
+        // $('#add').on('click',function(){
+        //     var item = $('#original').clone(true);
+        //     item.show();
+        //     item.addClass('e-items');
+        //     item.attr('id', '');
+        //     items.append(item);
+        //     $('#remove').show();
+        // });
+        // $('#remove').on('click',function(){
+        //     $($(".e-items")[$(".e-items").length-1]).remove(); 
+        //     if($(".e-items").length == 1){
+        //         $('#remove').hide();
+        //     }
+        //     changeClaim();
+        // });
 
         // 請求・支払変更
         $("input[name='nominal']").on('change', function(){

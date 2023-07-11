@@ -8,6 +8,13 @@
         <!-- PCのみ -->
         <div class="sp-hidden">
             <div class="search-area">
+                <div class="col-2">
+                    <input type="date" class="form-control" placeholder="キーワードを入力してください">
+                </div>
+                <div class="pt-2">～</div>
+                <div class="col-2">
+                    <input type="date" class="form-control" placeholder="キーワードを入力してください">
+                </div>
                 <div class="col-3">
                     <input type="text" class="form-control" placeholder="キーワードを入力してください">
                 </div>

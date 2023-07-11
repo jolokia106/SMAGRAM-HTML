@@ -13,17 +13,6 @@
                 </div>
                 <div class="col-2">
                     <select class="form-select">
-                        <option value="">顧客名</option>
-                        <option value="">顧客A</option>
-                        <option value="">顧客B</option>
-                        <option value="">顧客C</option>
-                        <option value="">顧客D</option>
-                        <option value="">顧客E</option>
-                        <option value="">顧客F</option>
-                    </select>
-                </div>
-                <div class="col-2">
-                    <select class="form-select">
                         <option value="">都道府県</option>
                         <option value="">北海道</option>
                         <option value="">青森県</option>

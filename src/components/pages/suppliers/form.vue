@@ -97,11 +97,8 @@
                 </div>
                 <div class="row mb-3 col-md-12">
                     <div class="column">住所</div>
-                    <div class="col-md-4">
-                        <p class="col-md-12">400-0001</p>
-                        <button type="button" class="btn btn-orive col-md-12 sp-wide" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            住所設定
-                        </button>
+                    <div class="col-md-6">
+                        <textarea class="form-control" placeholder="住所を入力"></textarea>
                     </div>
                 </div>
                 <div class="row">
@@ -321,11 +318,8 @@
                 </div>
                 <div class="row mb-3 col-md-12">
                     <div class="column">住所</div>
-                    <div class="col-md-4">
-                        <p class="col-md-12">400-0001</p>
-                        <button type="button" class="btn btn-orive col-md-12 sp-wide" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            住所設定
-                        </button>
+                    <div class="col-md-6">
+                        <textarea class="form-control" placeholder="住所を入力"></textarea>
                     </div>
                 </div>
                 <div class="row">

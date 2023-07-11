@@ -141,7 +141,7 @@
                 </div>
 
                 <div class="row mt-3 col-md-12 mb-5">
-                    <div class="column">除外地域</div>
+                    <div class="column">除外都道府県</div>
                     <div class="col-md-6 row check-settings grow-1" id="removePrefs">
                         <div class="form-check form-check-inline w-auto">
                             <input class="form-check-input" type="checkbox" name="area" id="remove_pref_1" value="">

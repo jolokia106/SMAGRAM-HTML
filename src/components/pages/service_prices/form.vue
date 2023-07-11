@@ -1835,7 +1835,7 @@
             <div class="content-body-title mt-5">
                 <h5>庭づくり-植栽・庭木メンテ</h5>
             </div>
-            <table class="service-price-green">
+            <table class="service-price-blue">
 
                 <!-- 庭木の植栽 -->
                 <tr>
@@ -1890,7 +1890,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>3m未満 客土 (堆肥・肥料・山砂)</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -1914,7 +1914,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>5m未満 客土 (堆肥・肥料・山砂)</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -1924,7 +1924,7 @@
                 </tr>
 
                 <!-- 生垣の植栽 -->
-                <tr>
+                <tr class="sky-blue">
                     <td width="10%" rowspan="14">生垣の植栽</td>
                     <th width="15%" rowspan="2">
                         距離<br>
@@ -1933,13 +1933,13 @@
                     <th width="32%" colspan="4">距離別一式単価</th>
                     <th width="8%" rowspan="2">単位</th>
                 </tr>
-                <tr>
+                <tr class="sky-blue">
                     <th width="8%" >5m未満</th>
                     <th width="8%" >5~10m未満</th>
                     <th width="8%" >10~15m未満</th>
                     <th width="8%" >15~20m未満</th>
                 </tr>
-                <tr class="wakaba">
+                <tr  class="sky-blue">
                     
                     <td>H1.5m未満 植込み・垣根作成</td>
                     <td><input type="number"></td>
@@ -1948,7 +1948,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>H1.5~2m未満 植込み・垣根作成</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -1956,7 +1956,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>H2~2.5m未満 植込み・垣根作成</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -1964,7 +1964,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>H2.5~3m未満 植込み・垣根作成</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -1972,7 +1972,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr>
                     <td>客土 (堆肥・肥料・山砂)</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -1995,7 +1995,7 @@
                     <th width="8%" >30~35m未満</th>
                     <th width="8%" >35~40m未満</th>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>H1.5m未満 植込み・垣根作成</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2003,7 +2003,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>H1.5~2m未満 植込み・垣根作成</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2011,7 +2011,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>H2~2.5m未満 植込み・垣根作成</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2019,7 +2019,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>H2.5~3m未満 植込み・垣根作成</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2061,7 +2061,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>客土 (堆肥・肥料・山砂)</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2086,7 +2086,7 @@
                     <th width="8%" >10~15m未満</th>
                     <th width="8%" >15~20m未満</th>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td rowspan="3">支柱</td>
                     <td>新規植栽時</td>
                     <td><input type="number"></td>
@@ -2095,7 +2095,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr  class="sky-blue">
                     <td>支柱追加時 (補強・更新等)</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2103,7 +2103,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>立て起こし時 (台風後等)</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2195,7 +2195,7 @@
             <div class="content-body-title mt-5">
                 <h5>庭づくり-移植関係</h5>
             </div>
-            <table class="service-price-green">
+            <table class="service-price-blue">
 
                 <!-- ①掘り取り②根巻 (根回しも本単価) -->
                 <tr>
@@ -2331,7 +2331,7 @@
                 </tr>
 
                 <!-- ③移植 (①・②費用含む) -->
-                <tr>
+                <tr class="sky-blue">
                     <td rowspan="16">③移植<br>(①・②費用含む)</td>
                     <th width="15%" rowspan="2">
                         距離<br>
@@ -2346,7 +2346,7 @@
                     <th width="8%" >5~7本</th>
                     <th width="8%" >8~10本</th>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>6cm未満(直径:2cm未満)</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2354,7 +2354,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>6~12cm未満(直径:2~4cm未満)</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2362,7 +2362,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>12~18cm未満(直径:4~6cm未満)</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2370,7 +2370,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>18~24cm未満(直径:6~8cm未満)</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2378,7 +2378,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>24cm以上(直径:8cm以上)</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2401,7 +2401,7 @@
                     <th width="8%" >5~7本</th>
                     <th width="8%" >8~10本</th>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>15cm未満(直径:5cm未満)</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2409,7 +2409,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>15~30cm未満(直径:5~10cm未満)</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2417,7 +2417,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>30~45cm未満(直径:10~15cm未満)</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2425,7 +2425,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>45~60cm未満(直径:15~20cm未満)</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2433,7 +2433,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>60~75cm未満(直径:20~25cm未満)</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2441,7 +2441,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>75~90cm未満(直径:25~30cm未満)</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2449,7 +2449,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>90cm以上(直径:30cm以上)</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2503,7 +2503,7 @@
                     <th width="8%" >5~7鉢</th>
                     <th width="8%" >8~10鉢</th>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td rowspan="14">鉢の植え替え</td>
                     <td>内寸直径15cm未満</td>
                     <td><input type="number"></td>
@@ -2515,7 +2515,7 @@
                         <textarea></textarea>
                     </td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>内寸直径15~20cm未満</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2523,7 +2523,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>内寸直径20~30cm未満</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>
@@ -2531,7 +2531,7 @@
                     <td><input type="number"></td>
                     <td><input type="number"></td>
                 </tr>
-                <tr class="wakaba">
+                <tr class="sky-blue">
                     <td>内寸直径30~45cm未満</td>
                     <td><input type="number"></td>
                     <td><input type="number"></td>

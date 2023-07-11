@@ -16,7 +16,7 @@ import App from '../../../App.vue';
             <div class="content-body-title">
                 <h5>対象</h5>
             </div>
-            <div class="container mb-5">
+            <div class="container mb-5 row">
                 <div class="row mb-5 col-md-4">
                     <select name="" id="" class="form-select">
                         <option value="">お庭の手入れ</option>
@@ -24,6 +24,9 @@ import App from '../../../App.vue';
                         <option value="">年間管理</option>
                         <option value="">共通</option>
                     </select>            
+                </div>
+                <div class="container col-md-4 mb-3">
+                    <input type="button" class="btn btn-orive sp-wide" id="reportShow" value="表示">
                 </div>
             </div>
             <div class="content-body-title">

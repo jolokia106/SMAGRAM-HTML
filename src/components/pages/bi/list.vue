@@ -22,7 +22,7 @@
             </ul>
             <ul class="tr body">
                 <li class="td">表名1</li>
-                <li class="td text-danger">表示中</li>
+                <li class="td">加盟店表示中</li>
                 <li class="td sp-hidden">
                     <a href="javascript:void(0)" class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#confirmModal">変更</a> 
                 </li>
@@ -39,7 +39,7 @@
             </ul>
             <ul class="tr body">
                 <li class="td">表名2</li>
-                <li class="td text-danger">表示中</li>
+                <li class="td">本部表示中</li>
                 <li class="td sp-hidden">
                     <a href="javascript:void(0)" class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#confirmModal">変更</a>
                 </li>
@@ -55,7 +55,7 @@
             </ul>
             <ul class="tr body">
                 <li class="td">表名3</li>
-                <li class="td">非表示</li>
+                <li class="td">本部表示中</li>
                 <li class="td sp-hidden">
                     <a href="javascript:void(0)" class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#confirmModal">変更</a> 
                 </li>
@@ -107,7 +107,10 @@
    
                        <p class="mt-3 mb-5 text-center">入力した内容を登録します。</p>
                         <div class="col-12 text-center mb-2 search-submit">
-                            <input type="submit" class="btn btn-orive col-12" value="OK">
+                            <input type="submit" class="btn btn-orive col-12" value="本部に表示">
+                        </div>
+                        <div class="col-12 text-center mb-2 search-submit">
+                            <input type="submit" class="btn btn-orive col-12" value="加盟店に表示">
                         </div>
                         <div class="text-center cancel" data-bs-dismiss="キャンセル">
                             <a href="javascript:void(0)" data-bs-dismiss="modal" aria-label="Close">キャンセル</a>

@@ -8,14 +8,20 @@
         <!-- PCのみ -->
         <div class="sp-hidden">
             <div class="search-area">
-                <div class="col-3">
+                <div class="col-2">
                     <input type="text" class="form-control" placeholder="キーワードを入力してください">
                 </div>
                 <div class="col-2">
                     <input type="text" class="form-control" placeholder="氏名">
                 </div>
-                <div class="col-3">
+                <div class="col-2">
                     <input type="text" class="form-control" placeholder="住所">
+                </div>
+                <div class="col-2">
+                    <select class="form-select">
+                        <option value="">加盟店 ⇔ 本部</option>
+                        <option value="">顧客 ⇔ 加盟店</option>
+                    </select>
                 </div>
 
                 <button class="col-1 btn btn-orive search-button">検索する</button>

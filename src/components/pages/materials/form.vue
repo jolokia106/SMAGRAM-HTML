@@ -12,13 +12,10 @@
                 <div class="row">
                     <div class="row mb-3 col-md-6">
                         <div class="column">購入BP店名</div>
-                        <div class="col-md-6">
-                            <select name="" id="" class="form-select">
-                                <option value="">加盟店１</option>
-                                <option value="">加盟店２</option>
-                                <option value="">加盟店３</option>
-                            </select>
+                        <div class="col-md-3">
+                            <input type="button" class="btn btn-orive sp-wide" id="" value="BP選択">
                         </div>
+                        <div class="col-md-3 pt-2 text-center">加盟店A</div>
                     </div>
                     <div class="row mb-3 col-md-6">
                         <div class="column">購入日</div>

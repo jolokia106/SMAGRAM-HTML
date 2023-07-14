@@ -2,7 +2,10 @@
     @use "/src/assets/css/chat.css"; 
 </style>
 <template>
-    <div class="content-title">
+    <div class="content-title row">
+        <a href="/chats/list">
+            <img src="/src/assets/image/angle-left-solid.svg" alt="">
+        </a>
         <h5>チャット履歴</h5>
     </div>
 

@@ -1,42 +1,41 @@
 <template>
-    <div class="content-title">
+    <div class="content-title row">
+        <a href="/materials/list">
+            <img src="/src/assets/image/angle-left-solid.svg" alt="">
+        </a>
         <h5>備品資材詳細</h5>
     </div>
 
-    <div class="content-body">
+    <div class="content-body materials-wrap">
         <div class="content-body-title">
             <h5>備品資材情報</h5>
         </div>
         <div class="container">
             <form action="/materials/list" method="GET">
-                <div class="row">
-                    <div class="row mb-3 col-md-6">
-                        <div class="column">購入BP店名</div>
-                        <div class="col-md-3">
-                            <input type="button" class="btn btn-orive sp-wide" id="" value="BP選択">
-                        </div>
-                        <div class="col-md-3 pt-2 text-center">加盟店A</div>
+                <div class="row mb-3 col-md-6">
+                    <div class="column">購入BP店名</div>
+                    <div class="col-md-3">
+                        <input type="button" class="btn btn-orive sp-wide" id="" value="BP選択">
                     </div>
-                    <div class="row mb-3 col-md-6">
-                        <div class="column">購入日</div>
-                        <div class="col-md-6"><input type="date" class="form-control"></div>
+                    <div class="col-md-3 pt-2 text-center">加盟店A</div>
+                </div>
+                <div class="row mb-3 col-md-6">
+                    <div class="column">購入日</div>
+                    <div class="col-md-6"><input type="date" class="form-control"></div>
+                </div>
+                <div class="row mb-3 col-md-6">
+                    <div class="column">支払方法</div>
+                    <div class="col-md-6">
+                        <select name="" id="" class="form-select">
+                            <option value="">クレジット</option>
+                            <option value="">銀行振込</option>
+                            <option value="">相殺</option>
+                        </select>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="row mb-3 col-md-6">
-                        <div class="column">支払方法</div>
-                        <div class="col-md-6">
-                            <select name="" id="" class="form-select">
-                                <option value="">クレジット</option>
-                                <option value="">銀行振込</option>
-                                <option value="">相殺</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mb-3 col-md-6">
-                        <div class="column">備考</div>
-                        <div class="col-md-6"><input type="text" class="form-control"></div>
-                    </div>
+                <div class="row mb-3 col-md-6">
+                    <div class="column">備考</div>
+                    <div class="col-md-6"><input type="text" class="form-control"></div>
                 </div>
 
 
@@ -91,23 +90,21 @@
                 </div>
 
 
-                <div class="row">
-                    <div class="row mb-3 col-md-6">
-                        <div class="column">入金日</div>
-                        <div class="col-md-8"><input type="date" class="form-control"></div>
-                    </div>
-                    <div class="row mb-3 col-md-6">
-                        <div class="column">ステータス</div>
-                        <div class="col-md-8">
-                            <select name="" id="" class="form-select">
-                                <option value="">本部確認中</option>
-                                <option value="">入金待</option>
-                                <option value="">入金済</option>
-                                <option value="">キャンセル</option>
-                                <option value="">発注済</option>
-                                <option value="">発送済</option>
-                            </select>
-                        </div>
+                <div class="row mb-3 col-md-6">
+                    <div class="column">入金日</div>
+                    <div class="col-md-8"><input type="date" class="form-control"></div>
+                </div>
+                <div class="row mb-3 col-md-6">
+                    <div class="column">ステータス</div>
+                    <div class="col-md-8">
+                        <select name="" id="" class="form-select">
+                            <option value="">本部確認中</option>
+                            <option value="">入金待</option>
+                            <option value="">入金済</option>
+                            <option value="">キャンセル</option>
+                            <option value="">発注済</option>
+                            <option value="">発送済</option>
+                        </select>
                     </div>
                 </div>
                 <div class="row">

@@ -12,26 +12,33 @@
                     <div class="col-2">
                         <input type="text" class="form-control" placeholder="キーワードを入力してください">
                     </div>
-                    <div class="col-2">
-                        <select class="form-select">
-                            <option value="">北海道</option>
-                            <option value="">青森県</option>
-                            <option value="">岩手県</option>
-                            <option value="">宮城県</option>
-                            <option value="">秋田県</option>
-                            <option value="">山形県</option>
-                        </select>
+
+                    <div class="row col-md-2 pref-wrap">
+                        <p class="col-md-3">地域</p>
+                        <div class="col-md-8">
+                            <select class="form-select">
+                                <option value="">北海道</option>
+                                <option value="">青森県</option>
+                                <option value="">岩手県</option>
+                                <option value="">宮城県</option>
+                                <option value="">秋田県</option>
+                                <option value="">山形県</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <select class="form-select">
-                            <option value="">事業カテゴリ</option>
-                            <option value="">smileガーデン</option>
-                            <option value="">smileエクステリア</option>
-                            <option value="">植木市場</option>
-                            <option value="">GARDEM-JOB</option>
-                            <option value="">お庭の達人</option>
-                            <option value="">ガーデンビジネス協会</option>
-                        </select>
+                    <div class="row col-md-2 pref-wrap">
+                        <p class="col-md-4">事業</p>
+                        <div class="col-md-8">
+                            <select class="form-select">
+                                <option value="">事業カテゴリ</option>
+                                <option value="">smileガーデン</option>
+                                <option value="">smileエクステリア</option>
+                                <option value="">植木市場</option>
+                                <option value="">GARDEM-JOB</option>
+                                <option value="">お庭の達人</option>
+                                <option value="">ガーデンビジネス協会</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="col-2">
                         <input type="text" class="form-control" placeholder="仕入先コード">
@@ -54,7 +61,7 @@
         
         <div class="sort-area d-flex justify-content-end mt-5">
 
-            <a href="/suppliers/form" class="new-button">
+            <a href="/suppliers/form" class="new-button me-auto">
                 <img src="/src/assets/image/plus_icon.svg" alt="">
                 <span>新規登録</span>
             </a>

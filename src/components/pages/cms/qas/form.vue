@@ -12,7 +12,10 @@
     import deleteView from '@/components/components/layouts/modal/delete.vue';
 </script>
 <template>
-    <div class="content-title">
+    <div class="content-title row">
+        <a href="/qas/list">
+            <img src="/src/assets/image/angle-left-solid.svg" alt="">
+        </a>
         <h5>Q&A詳細</h5>
     </div>
 
@@ -21,7 +24,7 @@
             <h5>記事情報</h5>
         </div>
         <div class="container">
-            <form action="/prs/list" method="GET">
+            <form action="/qas/list" method="GET">
 
                 <titleView />
                 <contentView />

@@ -11,16 +11,20 @@
                 <div class="col-3">
                     <input type="text" class="form-control" placeholder="キーワードを入力してください">
                 </div>
-                <div class="col-3">
-                    <select class="form-select">
-                        <option value="">本部確認中</option>
-                        <option value="">入金待</option>
-                        <option value="">入金済</option>
-                        <option value="">キャンセル</option>
-                        <option value="">発注済</option>
-                        <option value="">発送済</option>
-                    </select>
+                <div class="row col-md-3 pref-wrap">
+                    <p class="col-md-4">ステータス</p>
+                    <div class="col-md-8">
+                        <select class="form-select">
+                            <option value="">本部確認中</option>
+                            <option value="">入金待</option>
+                            <option value="">入金済</option>
+                            <option value="">キャンセル</option>
+                            <option value="">発注済</option>
+                            <option value="">発送済</option>
+                        </select>
+                    </div>
                 </div>
+
 
                 <button class="col-2 btn btn-orive search-button">検索する</button>
             </div>
@@ -39,7 +43,7 @@
 
         <div class="sort-area d-flex justify-content-end mt-5">
 
-            <a href="/materials/form" class="new-button">
+            <a href="/materials/form" class="new-button me-auto">
                 <img src="/src/assets/image/plus_icon.svg" alt="">
                 <span>新規登録</span>
             </a>

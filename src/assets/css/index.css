@@ -8,6 +8,9 @@ main {
 body {
     margin-bottom: 140px !important;
 }
+textarea{
+    height: 150px;
+}
 /* width  */
 .wi-50{
     width: 50px !important;
@@ -283,16 +286,27 @@ footer .footer-content p {
 .content-title {
     border-bottom: 1.5px solid #707070;
     width: 100%;
-    margin: 40px 0 30px 0;
+    margin: 40px 0 30px 0 !important;
 }
 .content-title h5 {
     font-weight: 900 !important;
+    width: auto;
+    padding-top: 2px;
+}
+
+.content-title a {
+    height: 24px;
+    width: 24px;
+    margin-right: 20px;
+}
+.content-title img {
+    height: 24px;
+    width: 24px;
 }
 
 @media (max-width: 768px) {
     .content-title h5 {
         font-weight: 900 !important;
-        font-size: 16px;
     }
 }
 
@@ -302,6 +316,9 @@ footer .footer-content p {
 
 .btn {
     min-width: 95px;
+}
+.submit-btn {
+    min-width: 260px !important;
 }
 .btn-orive {
     background-color: #998641 !important;
@@ -318,9 +335,9 @@ footer .footer-content p {
     background-color: #BBBBBB !important;
     border-color: #BBBBBB !important;
     color: #FFFFFF !important;
-    padding: 1.5px 10px 1.5px 10px !important;
+    padding: 4.5px 9px 1.5px 10px !important;
     min-width: 0 !important;
-    height: 24px !important;
+    height: 30px !important;
     font-size: 13px !important;
     font-weight: 400 !important;
 }
@@ -438,28 +455,49 @@ input[type=checkbox]:checked+.checkbox::after {
     margin-bottom: 10px;
 }
 .content-header .search-area .form-control{
-    height: 37px;
+    height: 47px;
+}
+.content-header .search-area .form-select{
+    width: 100%;
+    height: 47px;
 }
 .content-header .search-area .form-control::placeholder{
     color: #DDDDDD;
-    font-size: 11px;
+    font-size: 15px;
 }
 .content-header .search-area .search-button {
-    height: 37px;
-    font-size: 13px;
+    height: 47px;
+    font-size: 20px;
+    min-width: 107px;
     font-weight: bold;
     border-radius: 3px !important;
     margin-left: auto !important;
 }
+.content-header .search-area .pref-wrap {
+    min-width: 132px;
+}
+.content-header .search-area .pref-wrap p{
+    /* min-width:30%; */
+    padding-top: 7px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.content-header .search-area .pref-wrap div{
+    /* width:auto; */
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .content-header .new-button{
     width: 150px;
     border: 1px solid #998641;
     border-radius: 5px;
     background-color: #F8F6F1;
-    height: 37px;
+    height: 47px;
     text-align: center;
     margin-right: 20px;
-    padding-top: 4px;
+    padding-top: 9px;
 }
 .content-header .new-button{
     text-decoration: none;
@@ -482,12 +520,12 @@ input[type=checkbox]:checked+.checkbox::after {
 }
 
 .content-header .sort-area img{
-    height: 37px;
-    width: 37px;
+    height: 47px;
+    width: 47px;
     fill:  #F2F2F2;
 }
 .content-header .sort-area select{
-    height: 37px;
+    height: 47px;
     padding: 0;
     background-color: #F2F2F2;
     text-align: center;
@@ -544,9 +582,13 @@ input[type=checkbox]:checked+.checkbox::after {
         width: 100%;
         height: 35px;
     }
-    .content-header .search-area .search-button {
+    .content-header .search-area .form-select{
         width: 100%;
         height: 35px;
+    }
+    .content-header .search-area .search-button {
+        width: 100%;
+        height: 47px !important;
     }
     .sort-area {
         margin-right: 40px;
@@ -639,8 +681,8 @@ input[type=checkbox]:checked+.checkbox::after {
     width: 100%;
     display: flex;
     border-bottom: 1px solid #BBBBBB;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 19px;
+    padding-bottom: 15px;
 }
 .content-body .list-table .sp-detail{
     border-bottom: 1px solid #BBBBBB;
@@ -793,6 +835,7 @@ input[type=checkbox]:checked+.checkbox::after {
 .content-body .items {
     margin-bottom: 30px;
     padding-top: 0;
+    padding-left: 30px;
     border-top: 1.5px solid #BBBBBB;
     border-bottom: 1.5px solid #BBBBBB;
 }
@@ -1227,4 +1270,56 @@ input[type=checkbox]:checked+.checkbox::after {
 }
 .invoices-modal .dz-message {
     margin: 0 !important;
+}
+
+/* 仕入先 */
+.suppliers-wrap {
+
+}
+
+.suppliers-wrap .content-body-title {
+    border: none;
+}
+.suppliers-wrap .content-body-title h5{
+    color: #998641;
+    font-weight: bold;
+    font-size: 19px;
+}
+.suppliers-wrap .column{
+    color: black;
+}
+.suppliers-wrap .account {
+    padding-left: 30px;
+}
+.suppliers-wrap .account-column{
+    color: #998641;
+}
+.suppliers-wrap .supplier-border{
+    width: 100%;
+    /* height: 1px; */
+    border-bottom: 1.5px solid #BBBBBB;
+    margin-bottom: 30px;
+}
+
+/* 備品資材 */
+.materials-wrap {
+
+}
+
+.materials-wrap .content-body-title {
+    border: none;
+}
+.materials-wrap .content-body-title h5{
+    color: #998641;
+    font-weight: bold;
+    font-size: 19px;
+}
+.materials-wrap .column{
+    color: black;
+}
+.suppliers-wrap .account {
+    padding-left: 30px;
+}
+.suppliers-wrap .account-column{
+    color: #998641;
 }

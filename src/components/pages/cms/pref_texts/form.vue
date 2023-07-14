@@ -12,7 +12,10 @@
     import deleteView from '@/components/components/layouts/modal/delete.vue';
 </script>
 <template>
-    <div class="content-title">
+    <div class="content-title row">
+        <a href="/pref_texts/list">
+            <img src="/src/assets/image/angle-left-solid.svg" alt="">
+        </a>
         <h5>都道府県テキスト詳細</h5>
     </div>
 

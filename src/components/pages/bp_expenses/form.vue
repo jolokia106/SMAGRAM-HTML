@@ -5,8 +5,11 @@
     import addressModal from '@/components/components/layouts/modal/address_modal.vue';
 </script>
 <template>
-    <div class="content-title">
-        <h5>備品費用管理一覧</h5>
+    <div class="content-title row">
+        <a href="/bp_expenses/list">
+            <img src="/src/assets/image/angle-left-solid.svg" alt="">
+        </a>
+        <h5>備品費用管理詳細</h5>
     </div>
 
     <div class="content-body">
